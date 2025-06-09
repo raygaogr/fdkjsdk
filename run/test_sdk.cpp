@@ -7,6 +7,8 @@
 #include <codecvt>
 #include <Windows.h>
 #include <time.h>
+#include "yaml-cpp/yaml.h"
+
 
 //#include <cuda_runtime.h>
 //#include <cudnn.h>
@@ -96,13 +98,25 @@ int test_cudnn() {
 	return 0;
 }
 
+int test_yaml() {
+	YAML::Node config = YAML::LoadFile("D:/Workspace_gr/cProjects/fdkjsdk/config/config.yaml");
+	if (!config["modules"]) {
+		std::cerr << "Model configuration not found." << std::endl;
+		return 1;
+	}
+	std::cout << config["modules"]["0001"] << std::endl;
+	return 0;
+}
+
 
 int main(int argc, char* argv[]) {
 	//test_cuda();
 	//test_cudnn();
+	//test_yaml();
 	flabsdk::flabio::PlatformInfo platform_info;
 	auto a = flabsdk::GetPlatformInfo(&platform_info);
 	std::cout << platform_info.platform << ": " << platform_info.version << ", "  << std::endl;
+	std::cout << platform_info.is_cuda_matched << ", " << platform_info.is_cudnn_matched << std::endl;
 
 	flabsdk::InferEngine* engine = nullptr;
 	std::cout << "start create engine" << std::endl;
@@ -110,24 +124,23 @@ int main(int argc, char* argv[]) {
 	int d = INT_MAX;
 	int e = INT_MIN;
 
-	auto status = flabsdk::CreateInferEngine("0002", &engine);
+	auto status = flabsdk::CreateInferEngine("0001", &engine);
 	if (status != flabsdk::Status::kSuccess) {
 		std::cerr << "Failed to create inference engine: " << static_cast<int>(status) << std::endl;
 		return -1;
 	}
 	std::cout << "sucessfully create engine" << std::endl;
 
-
 	//getchar();
-	//status = engine->InitLog("log.txt");
-	//if (status != flabsdk::Status::kSuccess) {
-	//	std::cerr << "Failed to initialize log: " << static_cast<int>(status) << std::endl;
-	//	delete engine;
-	//	return -1;
-	//}
-	//std::cout << "sucessfully init log" << std::endl;
+	status = engine->InitLog("log.txt");
+	if (status != flabsdk::Status::kSuccess) {
+		std::cerr << "Failed to initialize log: " << static_cast<int>(status) << std::endl;
+		delete engine;
+		return -1;
+	}
+	std::cout << "sucessfully init log" << std::endl;
 
-	std::string str = "config/config.json";
+	std::string str = "D:/Workspace_gr/cProjects/fdkjsdk/config/config.json";
 	status = engine->LoadResources(str);
 	if (status != flabsdk::Status::kSuccess) {
 		std::cerr << "Failed to load resources: " << static_cast<int>(status) << std::endl;
@@ -138,7 +151,7 @@ int main(int argc, char* argv[]) {
 
 	flabsdk::flabio::DetInferCfg infer_cfg;
 	flabsdk::flabio::DetInferRes infer_res;
-	cv::Mat input_mat = cv::imread("data/image/test_glassbracket.jpg");
+	cv::Mat input_mat = cv::imread("D:/Workspace_gr/cProjects/fdkjsdk/data/image/test_weld.jpg");
 	auto input_h = input_mat.rows;
 	auto input_w = input_mat.cols;
 
@@ -150,8 +163,20 @@ int main(int argc, char* argv[]) {
 
 	infer_cfg.infer_rois.push_back(roi);
 
+	int warm_up_times = 0;
+	for (int i = 0; i < warm_up_times; i++) {
+		status = engine->InferSync(input_mat, &infer_cfg, &infer_res);
+		if (status != flabsdk::Status::kSuccess) {
+			std::cerr << "Failed to run inference: " << static_cast<int>(status) << std::endl;
+			engine->ClearResources();
+			delete engine;
+			return -1;
+		}
+	}
+	std::cout << "Warm up completed." << std::endl;
+
 	time_t start_time = time(NULL);
-	int infer_times = 10;
+	int infer_times = 1;
 	for (int i = 0; i < infer_times; i++) {
 		status = engine->InferSync(input_mat, &infer_cfg, &infer_res);
 		if (status != flabsdk::Status::kSuccess) {
@@ -173,7 +198,6 @@ int main(int argc, char* argv[]) {
 
 	std::cout << "Engine destroyed successfully." << std::endl;
 
-	getchar();
 
 	//flabsdk::CreateInferEngine("0001", &engine);
 

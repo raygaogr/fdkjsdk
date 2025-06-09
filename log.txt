@@ -1,0 +1,22 @@
+[2025-06-09 16:58:36] [info] Load Module: 0001
+[2025-06-09 16:58:36] [info] Module class: DetInferModule
+[2025-06-09 16:58:36] [info] The module is registered, name: DetInferModule
+[2025-06-09 16:58:36] [info] DetInferModule init
+[2025-06-09 16:58:37] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-09 16:58:37] [info] cuDNN Version: 9.10
+[2025-06-09 16:58:37] [info] Create infer model success
+[2025-06-09 16:58:37] [info] 	images : 1x3x1280x1280.
+[2025-06-09 16:58:37] [info] 	output0 : 1x12x33600
+[2025-06-09 16:58:37] [info] Create infer model success
+[2025-06-09 16:58:37] [info] Create infer assets success
+[2025-06-09 16:58:37] [info] Start run infer sync.
+[2025-06-09 16:58:37] [info] Run a single roi.
+[2025-06-09 16:58:37] [info] Running model id 0001
+[2025-06-09 16:58:37] [info] Start RunInferModel
+[2025-06-09 16:58:37] [info] input name: images
+[2025-06-09 16:58:37] [info] output name: output0
+[2025-06-09 16:58:37] [info] Running model ...
+[2025-06-09 16:58:38] [info] Run model success
+[2025-06-09 16:58:38] [info] RunInferModel overlaps 369 ms
+[2025-06-09 16:58:38] [info] Class num: 3
+[2025-06-09 16:58:38] [info] Destroy the engine success.

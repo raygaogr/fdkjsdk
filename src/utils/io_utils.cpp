@@ -32,6 +32,4 @@ namespace flabsdk {
 		}
 		return Status::kSuccess;	
 	}
-
-
 }  // namespace flabsdk

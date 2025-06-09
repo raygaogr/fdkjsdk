@@ -75,7 +75,15 @@ namespace flabsdk {
 			qsort_descent_inplace(objects, 0, objects.size() - 1);
 		}
 
-		
+
+		std::vector<float> get_center_infor(std::vector<float>& rbox) {
+			float x1 = rbox[0], y1 = rbox[1], x2 = rbox[2], y2 = rbox[3];
+			float center_x = (x1 + x2) / 2, center_y = (y1 + y2) / 2;
+			float w = x2 - x1, h = y2 - y1;
+			std::vector<float> info = { center_x, center_y, w, h };
+			return info;
+		}
+
 		static void nms(const std::vector<Object>& objects,
 			std::vector<int>& picked, float nms_threshold) {
 			picked.clear();
@@ -119,7 +127,7 @@ namespace flabsdk {
 		}
 
 
-		Status DetInferModule::postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, det_infer::RecordInfo& record_info) {
+		Status DetInferModule::postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info) {
 			if (id_cfgs_.empty()) {
 				spdlog::info("Class id cfgs is empty, skip the infer process.");
 				return Status::kInputInvalid;
@@ -141,7 +149,7 @@ namespace flabsdk {
 						class_id = i;
 					}
 				}
-				if (max_score >= record_info.infer_cfg.conf) {
+				if (max_score >= record_info->det_infer_cfg.conf) {
 					Object temp_obj;
 					float cx = input_vec[0 * output_shape[2] + j];
 					float cy = input_vec[1 * output_shape[2] + j];
@@ -158,7 +166,7 @@ namespace flabsdk {
 					xmax = std::min(float(img_w), xmax);
 					ymax = std::min(float(img_h), ymax);
 
-					temp_obj.rbox = {xmin, ymin, xmax, ymax};
+					temp_obj.rbox = { xmin, ymin, xmax, ymax };
 					temp_obj.label = class_id;
 					temp_obj.class_conf = max_score;
 					proposals.emplace_back(temp_obj);
@@ -166,7 +174,7 @@ namespace flabsdk {
 			}
 			qsort_descent(proposals);
 			std::vector<int> picked;
-			nms(proposals, picked, record_info.infer_cfg.iou);
+			nms(proposals, picked, record_info->det_infer_cfg.iou);
 
 			size_t count = picked.size();
 			if (count == 0) {
@@ -175,26 +183,22 @@ namespace flabsdk {
 			}
 			for (size_t i = 0; i < count; i++) {
 				Object obj = proposals[picked[i]];
-				det_infer::DetResult single_box;
+				std::vector<float> rbox = {
+					obj.rbox[0], obj.rbox[1], obj.rbox[2], obj.rbox[3]
+				};
+				auto bbox = get_center_infor(rbox);
+				flabio::RotateBox single_box;
 				single_box.angle = 0;
-				single_box.box.push_back(obj.rbox[0]);
-				single_box.box.push_back(obj.rbox[1]);
-				single_box.box.push_back(obj.rbox[2]);
-				single_box.box.push_back(obj.rbox[3]);
 				single_box.score = obj.class_conf;
-				single_box.id = std::to_string(obj.label);
-				single_box.name = id_cfgs_[single_box.id].get<std::string>();
-				record_info.det_infors.emplace_back(single_box);
+				single_box.uid = std::to_string(obj.label);
+				single_box.name = id_cfgs_[single_box.uid].get<std::string>();
+				single_box.x = bbox[0];
+				single_box.y = bbox[1];
+				single_box.width = bbox[2];
+				single_box.height = bbox[3];
+				record_info->bbox_vec.emplace_back(single_box);
 			}
 			return Status::kSuccess;
-			//std::cout << "det_infors size: " << record_info.det_infors.size() << std::endl;
-			//for (const auto& det : record_info.det_infors) {
-			//	std::cout << "det_infors: " << det.id << " " << det.name << " " << det.score << std::endl;
-			//	for (const auto& box : det.box) {
-			//		std::cout << box << " ";
-			//	}
-			//	std::cout << std::endl;
-			//}
 		}
 
 
@@ -206,13 +210,11 @@ namespace flabsdk {
 				spdlog::error("model_path is empty");
 				return Status::kInputInvalid;
 			}
-			std::cout << "444444444444" << std::endl;
 			std::vector<std::shared_ptr<infer_env::InferEnv>> det_models;
 			cfgs_ = init_params["cfgs"];
 			id_cfgs_ = init_params["id_cfgs"];
 			auto device = cfgs_["device"].get<std::string>();
 			for (const auto& model_path : model_path_vec) {
-				std::cout << model_path << std::endl;
 				std::vector<char> model_str;
 				auto status = readFileStream(model_path, model_str);
 				if (status != Status::kSuccess) {
@@ -221,6 +223,10 @@ namespace flabsdk {
 				}
 				auto det_model = std::make_shared<infer_env::InferEnv>();
 				status = infer_env::CreateInferEnv(model_str.data(), model_str.size(), cache_dir, device, det_model);
+				if (status != Status::kSuccess) {
+					spdlog::error("Create infer env failed");
+					return status;
+				}
 				det_models.emplace_back(det_model);
 			}
 			spdlog::info("Create infer model success");
@@ -229,9 +235,9 @@ namespace flabsdk {
 		}
 
 
-		Status DetInferModule::run(det_infer::RecordInfo& record_info) {
-			const int img_w = record_info.img.cols;
-			const int img_h = record_info.img.rows;
+		Status DetInferModule::run(RecordInfo* record_info) {
+			const int img_w = record_info->img.cols;
+			const int img_h = record_info->img.rows;
 			if (img_w == 0 || img_h == 0) {
 				spdlog::info("The input image is invalid, skip the infer process.");
 				return Status::kInputInvalid;
@@ -241,7 +247,7 @@ namespace flabsdk {
 			auto input_shape = (infer_model->input_shapes)[0];
 
 			std::vector<std::vector<float>> input_vec(1);
-			auto status = preprocess(record_info.img, input_shape[2], input_shape[3], input_vec[0]);
+			auto status = preprocess(record_info->img, input_shape[2], input_shape[3], input_vec[0]);
 			if (status != Status::kSuccess) {
 				spdlog::error("Preprocess failed");
 				return status;
@@ -257,7 +263,7 @@ namespace flabsdk {
 			auto output_shape = (infer_model->output_shapes)[0];
 			std::vector<float> output_arr = std::move(output_vec[0]);
 
-			status = postprocess(output_arr, output_shape, img_h, img_w, input_shape[2], input_shape[3], record_info);
+			status = postprocess(output_arr, output_shape, img_h, img_w, input_shape[2], input_shape[3], static_cast<DetRecordInfo*>(record_info));
 			return status;
 		}
 
@@ -267,7 +273,7 @@ namespace flabsdk {
 
 			cv::Mat resized_img;
 			letterbox(img, input_w, input_h, resized_img);
-			
+
 			resized_img.convertTo(resized_img, CV_32FC3);
 			input_vec.resize(input_h * input_w * 3);
 			float* img_data_ptr = reinterpret_cast<float*>(resized_img.data);
@@ -284,7 +290,7 @@ namespace flabsdk {
 		}
 
 
-		Status GlassBracketModule::postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, det_infer::RecordInfo& record_info) {
+		Status GlassBracketModule::postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info) {
 			if (id_cfgs_.empty()) {
 				spdlog::info("Class id cfgs is empty, skip the infer process.");
 				return Status::kInputInvalid;
@@ -311,7 +317,7 @@ namespace flabsdk {
 						class_id = i;
 					}
 				}
-				if (max_score >= record_info.infer_cfg.conf) {
+				if (max_score >= record_info->det_infer_cfg.conf) {
 					Object temp_obj;
 					float cx = input_vec[0 * output_shape[2] + j];
 					float cy = input_vec[1 * output_shape[2] + j];
@@ -336,7 +342,7 @@ namespace flabsdk {
 			}
 			qsort_descent(proposals);
 			std::vector<int> picked;
-			nms(proposals, picked, record_info.infer_cfg.iou);
+			nms(proposals, picked, record_info->det_infer_cfg.iou);
 
 			size_t count = picked.size();
 			if (count == 0) {
@@ -345,16 +351,20 @@ namespace flabsdk {
 			}
 			for (size_t i = 0; i < count; i++) {
 				Object obj = proposals[picked[i]];
-				det_infer::DetResult single_box;
+				std::vector<float> rbox = {
+					obj.rbox[0], obj.rbox[1], obj.rbox[2], obj.rbox[3]
+				};
+				auto bbox = get_center_infor(rbox);
+				flabio::RotateBox single_box;
 				single_box.angle = 0;
-				single_box.box.push_back(obj.rbox[0]);
-				single_box.box.push_back(obj.rbox[1]);
-				single_box.box.push_back(obj.rbox[2]);
-				single_box.box.push_back(obj.rbox[3]);
 				single_box.score = obj.class_conf;
-				single_box.id = std::to_string(obj.label);
-				single_box.name = id_cfgs_[single_box.id].get<std::string>();
-				record_info.det_infors.emplace_back(single_box);
+				single_box.uid = std::to_string(obj.label);
+				single_box.name = id_cfgs_[single_box.uid].get<std::string>();
+				single_box.x = bbox[0];
+				single_box.y = bbox[1];
+				single_box.width = bbox[2];
+				single_box.height = bbox[3];
+				record_info->bbox_vec.emplace_back(single_box);
 			}
 			return Status::kSuccess;
 		}
@@ -381,6 +391,10 @@ namespace flabsdk {
 				}
 				auto det_model = std::make_shared<infer_env::InferEnv>();
 				status = infer_env::CreateInferEnv(model_str.data(), model_str.size(), cache_dir, device, det_model);
+				if (status != Status::kSuccess) {
+					spdlog::error("Create infer env failed");
+					return status;
+				}
 				det_models.emplace_back(det_model);
 			}
 			spdlog::info("Create infer model success");
@@ -389,9 +403,9 @@ namespace flabsdk {
 		}
 
 
-		Status GlassBracketModule::run(det_infer::RecordInfo& record_info) {
-			const int img_w = record_info.img.cols;
-			const int img_h = record_info.img.rows;
+		Status GlassBracketModule::run(RecordInfo* record_info) {
+			const int img_w = record_info->img.cols;
+			const int img_h = record_info->img.rows;
 			if (img_w == 0 || img_h == 0) {
 				spdlog::info("The input image is invalid, skip the infer process.");
 				return Status::kInputInvalid;
@@ -401,7 +415,7 @@ namespace flabsdk {
 			auto input_shape = (infer_model->input_shapes)[0];
 
 			std::vector<std::vector<float>> input_vec(1);
-			auto status = preprocess(record_info.img, input_shape[2], input_shape[3], input_vec[0]);
+			auto status = preprocess(record_info->img, input_shape[2], input_shape[3], input_vec[0]);
 			if (status != Status::kSuccess) {
 				spdlog::error("Preprocess failed");
 				return status;
@@ -417,7 +431,7 @@ namespace flabsdk {
 			auto output_shape = (infer_model->output_shapes)[0];
 			std::vector<float> output_arr = std::move(output_vec[0]);
 
-			status = postprocess(output_arr, output_shape, img_h, img_w, input_shape[2], input_shape[3], record_info);
+			status = postprocess(output_arr, output_shape, img_h, img_w, input_shape[2], input_shape[3], static_cast<DetRecordInfo*>(record_info));
 			return status;
 		}
 

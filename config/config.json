@@ -12,7 +12,7 @@
 			"init_params": {
 				"model_path": ["D:/Workspace_gr/cProjects/fdkjsdk/models/weld.onnx"],
 				"cfgs": {
-					"device": "CPU",
+					"device": "GPU",
 					"max_num": 10,
 					"conf": 0.3,
 					"iou": 0.3,
@@ -31,7 +31,7 @@
 			"init_params": {
 				"model_path": ["D:/Workspace_gr/cProjects/fdkjsdk/models/glassbracket.onnx"],
 				"cfgs": {
-					"device": "CPU",
+					"device": "GPU",
 					"max_num": 10,
 					"conf": 0.5,
 					"iou": 0.5,
@@ -48,7 +48,7 @@
 		"main" : [
 			{
 				"type": "Run",
-				"model_id": "0002"
+				"model_id": "0001"
 			}
 		]
 	}

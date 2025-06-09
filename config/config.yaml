@@ -1,0 +1,42 @@
+info:
+  Author: Your Name
+  Description: A simple script to demonstrate the use of a config file.
+  Date: 2025-04-15
+  Platform: Onnxruntime
+  Platform Version: 1.21.0
+
+modules:
+  "0001":
+    class: DetInferModule
+    init_params:
+      model_path: 
+        - D:/Workspace_gr/cProjects/fdkjsdk/models/weld.onnx
+      cfgs:
+        device: GPU
+        max_num: 10
+        conf: 0.3
+        iou: 0.3
+        sort_mathod: 0
+      id_cfgs:
+        "0": label0
+        "1": label1
+        "2": label2
+  
+  "0002":
+    class: GlassBracketModule
+    init_params:
+      model_path:
+        - D:/Workspace_gr/cProjects/fdkjsdk/models/glassbracket.onnx
+      cfgs:
+        device: GPU
+        max_num: 10
+        conf: 0.5
+        iou: 0.5
+        sort_mathod: 0
+      id_cfgs:
+        "0": label0
+
+graph:
+  main:
+    - type: Run
+      model_id: "0001"

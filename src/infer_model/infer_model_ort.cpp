@@ -4,64 +4,11 @@
 #include <iostream>
 #include <sstream>
 #include "utils/io_utils.h"
+#include "utils/base_funcs.h"
 
-typedef int (*cudaRuntimeGetVersion_t)(int*);
-typedef unsigned int (*cudnnGetVersion_t)();
 
 namespace flabsdk {
 	namespace infer_env {
-
-		bool is_cuda_available() {
-			HMODULE handle = LoadLibrary(TEXT("cudart64_12.dll"));
-			if (handle == NULL) {
-				spdlog::info("Cannot open the cudart library, please check the cuda is available, 12.X is required.");
-				return false;
-			}
-			cudaRuntimeGetVersion_t cudaRuntimeGetVersion = (cudaRuntimeGetVersion_t)GetProcAddress(handle, "cudaRuntimeGetVersion");
-			if (cudaRuntimeGetVersion == NULL) {
-				spdlog::info("Cannot load function 'cudaRuntimeGetVersion'.");
-				FreeLibrary(handle);
-				return false;
-			}
-			int version;
-			int result = cudaRuntimeGetVersion(&version);
-			if (result == 0) {
-				spdlog::info("Get the CUDA Runtime Version: {}.{}", std::to_string(version / 1000), std::to_string((version % 1000) / 10));
-			}
-			else {
-				spdlog::info("Failed to get CUDA runtime version.");
-				FreeLibrary(handle);
-				return false;
-			}
-
-			FreeLibrary(handle);
-			return true;
-		}
-
-		bool is_cudnn_available() {
-			// 尝试打开cuDNN共享库
-			HMODULE handle = LoadLibrary(TEXT("cudnn64_9.dll")); // 确保这里是你的cuDNN DLL的实际名称
-			if (handle == NULL) {
-				spdlog::info("Cannot open cudnn library, please check the cudnn is available, 9.X is required.");
-				return false;
-			}
-
-			// 加载cudnnGetVersion函数
-			cudnnGetVersion_t cudnnGetVersion = (cudnnGetVersion_t)GetProcAddress(handle, "cudnnGetVersion");
-			if (cudnnGetVersion == NULL) {
-				spdlog::info("Cannot load function 'cudnnGetVersion'.");
-				FreeLibrary(handle);
-				return false;
-			}
-
-			// 使用加载的函数获取cuDNN版本号
-			unsigned int version = cudnnGetVersion();
-			spdlog::info("cuDNN Version: {}.{}", std::to_string(version / 10000), std::to_string((version % 10000) / 100));
-
-			// 关闭库句柄
-			FreeLibrary(handle);
-			return true;
-		}
 
 		std::string print_shape(const std::vector<std::int64_t>& v) {
 			std::stringstream ss("");
@@ -93,12 +40,16 @@ namespace flabsdk {
 			env->env = Ort::Env(ORT_LOGGING_LEVEL_WARNING, "infer_model");
 			Ort::SessionOptions session_options;
 			session_options.SetGraphOptimizationLevel(ORT_ENABLE_EXTENDED);
-			std::cout << "555555555555555" << std::endl;
-			if (is_cuda_available() && is_cudnn_available()) {
-				Ort::ThrowOnError(OrtSessionOptionsAppendExecutionProvider_CUDA(session_options, 0));
-			}
-			else {
-				spdlog::info("CUDA or cuDNN is not available, using CPU execution provider.");
+
+			std::transform(device.begin(), device.end(), device.begin(), ::tolower);
+			if (device == "gpu") {
+				if (is_cuda_available() && is_cudnn_available()) {
+					Ort::ThrowOnError(OrtSessionOptionsAppendExecutionProvider_CUDA(session_options, 0));
+				}
+				else {
+					spdlog::info("CUDA or cuDNN is not available.");
+					return Status::kNotFound;
+				}
 			}
 			env->session = Ort::Session(env->env, model_data, model_data_length, session_options);
 			spdlog::info("Create infer model success");

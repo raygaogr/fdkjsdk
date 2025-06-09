@@ -5,12 +5,13 @@
 #include <string>
 
 namespace flabsdk {
-
 	namespace flabio {
 		struct PlatformInfo {
 			std::string platform = "";
 			std::string version = "";
 			std::string cudnn_version = "";
+			bool is_cuda_matched = false;
+			bool is_cudnn_matched = false;
 		};
 
 
@@ -45,7 +46,7 @@ namespace flabsdk {
 		struct Mask {
 			std::vector<Point> points; // points of the contour
 			std::string uid; // unique id of the mask
-			std::string type; // type of the mask
+			std::string name; // type of the mask
 		};
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -60,13 +61,15 @@ namespace flabsdk {
 			std::vector<ROI> infer_rois;       // ROI region of interest
 			float conf = 0.3;    // The confidence threshold
 			float iou = 0.3;     // The IOU threshold
-			int max_num = 10;    // The max number of objects to detect
+			int max_num = -1;    // The max number of objects to detect
 			int sort_method = 0;   // The mothod of sorting
 		};
 
-		struct Task2InferCfg : public BaseInferCfg {
+		struct SegInferCfg : public BaseInferCfg {
 			std::vector<ROI> infer_rois;       // ROI region of interest
-			float conf = 0.1;    // The confidence threshold
+			float conf = 0.3;    // The confidence threshold
+			float iou = 0.3;     // The IOU threshold
+			int max_num = -1;    // The max number of objects to detect
 		};
 
 		struct Task3InferCfg : public BaseInferCfg {
@@ -86,14 +89,12 @@ namespace flabsdk {
 			std::vector<std::vector<RotateBox>> bboxes_vec; // bounding boxes result
 		};
 
-		struct Task2InferRes : public BaseInferRes {
+		struct SegInferRes : public BaseInferRes {
 			std::vector<std::vector<Mask>> masks_vec;       // segmentation masks
 		};
 
 		struct Task3InferRes : public BaseInferRes {
 			std::unordered_map<std::string, float> scores; // class scores
 		};
-
-
 	} // namespace flabio
 } // namespace flabsdk

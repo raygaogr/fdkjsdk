@@ -21,7 +21,7 @@ namespace flabsdk {
 		}
 
 		if (!uninited) {
-			//spdlog::info("The module is registered, name: {}", name);
+			spdlog::info("The module is registered, name: {}", name);
 			return res;
 		}
 		else {

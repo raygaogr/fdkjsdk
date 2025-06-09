@@ -14,29 +14,29 @@ namespace flabsdk {
 			DetInferModule() = default;
 			virtual ~DetInferModule() = default;
 			Status init(const nlohmann::json& init_params) override;
-			Status run(det_infer::RecordInfo& record_info) override;
+			Status run(RecordInfo* record_info) override;
 
 		private:
 			Status preprocess(cv::Mat img, int input_h, int input_w, std::vector<float>& input_vec);
-			Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, det_infer::RecordInfo& record_info);
+			Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info);
 			nlohmann::json cfgs_;
 			nlohmann::json id_cfgs_;
 			std::unordered_map<std::string, std::vector<std::shared_ptr<infer_env::InferEnv>>> model_;
 		};
 
 		class GlassBracketModule : public BaseModule {
-			public:
-				GlassBracketModule() = default;
-				~GlassBracketModule() = default;
-				Status init(const nlohmann::json& init_params) override;
-				Status run(det_infer::RecordInfo& record_info) override;
-	
-			private:
-				Status preprocess(cv::Mat img, int input_h, int input_w, std::vector<float>& input_vec);
-				Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, det_infer::RecordInfo& record_info);
-				nlohmann::json cfgs_;
-				nlohmann::json id_cfgs_;
-				std::unordered_map<std::string, std::vector<std::shared_ptr<infer_env::InferEnv>>> model_;
+		public:
+			GlassBracketModule() = default;
+			~GlassBracketModule() = default;
+			Status init(const nlohmann::json& init_params) override;
+			Status run(RecordInfo* record_info) override;
+
+		private:
+			Status preprocess(cv::Mat img, int input_h, int input_w, std::vector<float>& input_vec);
+			Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info);
+			nlohmann::json cfgs_;
+			nlohmann::json id_cfgs_;
+			std::unordered_map<std::string, std::vector<std::shared_ptr<infer_env::InferEnv>>> model_;
 		};
 
 
