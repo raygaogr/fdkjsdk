@@ -5,6 +5,9 @@
 #include "infer_modules/base_module.h"
 #include "infer_model/infer_model_ort.h"
 #include "opencv2/core/types.hpp"
+#include "utils/registry.h"
+#include "infer_modules/preprocess_strategy.h"
+#include "infer_modules/postprocess_strategy.h"
 
 namespace flabsdk {
 	namespace modules {
@@ -13,32 +16,28 @@ namespace flabsdk {
 		public:
 			DetInferModule() = default;
 			virtual ~DetInferModule() = default;
-			Status init(const nlohmann::json& init_params) override;
+			virtual Status init(const nlohmann::json& init_params) override;
 			Status run(RecordInfo* record_info) override;
 
-		private:
-			Status preprocess(cv::Mat img, int input_h, int input_w, std::vector<float>& input_vec);
-			Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info);
+			Status init_model_and_cfgs(const nlohmann::json& init_params);
+		
+		protected:
 			nlohmann::json cfgs_;
 			nlohmann::json id_cfgs_;
 			std::unordered_map<std::string, std::vector<std::shared_ptr<infer_env::InferEnv>>> model_;
+			std::shared_ptr<PreProcessStrategy> preprocess_strategy_;
+			std::shared_ptr<PostProcessStrategy> postprocess_strategy_;
 		};
+		REGISTER_MODULE("DetInferModule", DetInferModule);
 
-		class GlassBracketModule : public BaseModule {
+		class GlassBracketModule : public DetInferModule {
 		public:
 			GlassBracketModule() = default;
 			~GlassBracketModule() = default;
 			Status init(const nlohmann::json& init_params) override;
-			Status run(RecordInfo* record_info) override;
 
-		private:
-			Status preprocess(cv::Mat img, int input_h, int input_w, std::vector<float>& input_vec);
-			Status postprocess(std::vector<float>& input_vec, std::vector<int64_t>& output_shape, int img_h, int img_w, int input_h, int input_w, DetRecordInfo* record_info);
-			nlohmann::json cfgs_;
-			nlohmann::json id_cfgs_;
-			std::unordered_map<std::string, std::vector<std::shared_ptr<infer_env::InferEnv>>> model_;
 		};
-
+		REGISTER_MODULE("GlassBracketModule", GlassBracketModule);
 
 	}  // namespace modules
 }  // namespace flabsdk

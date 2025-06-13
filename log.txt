@@ -1,22 +1,3320 @@
-[2025-06-09 16:58:36] [info] Load Module: 0001
-[2025-06-09 16:58:36] [info] Module class: DetInferModule
-[2025-06-09 16:58:36] [info] The module is registered, name: DetInferModule
-[2025-06-09 16:58:36] [info] DetInferModule init
-[2025-06-09 16:58:37] [info] Get the CUDA Runtime Version: 12.6
-[2025-06-09 16:58:37] [info] cuDNN Version: 9.10
-[2025-06-09 16:58:37] [info] Create infer model success
-[2025-06-09 16:58:37] [info] 	images : 1x3x1280x1280.
-[2025-06-09 16:58:37] [info] 	output0 : 1x12x33600
-[2025-06-09 16:58:37] [info] Create infer model success
-[2025-06-09 16:58:37] [info] Create infer assets success
-[2025-06-09 16:58:37] [info] Start run infer sync.
-[2025-06-09 16:58:37] [info] Run a single roi.
-[2025-06-09 16:58:37] [info] Running model id 0001
-[2025-06-09 16:58:37] [info] Start RunInferModel
-[2025-06-09 16:58:37] [info] input name: images
-[2025-06-09 16:58:37] [info] output name: output0
-[2025-06-09 16:58:37] [info] Running model ...
-[2025-06-09 16:58:38] [info] Run model success
-[2025-06-09 16:58:38] [info] RunInferModel overlaps 369 ms
-[2025-06-09 16:58:38] [info] Class num: 3
-[2025-06-09 16:58:38] [info] Destroy the engine success.
+[2025-06-11 10:17:39] [info] Load Module: 0002
+[2025-06-11 10:17:39] [info] Module class: GlassBracketModule
+[2025-06-11 10:17:39] [info] DetInferModule init
+[2025-06-11 10:17:39] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 10:17:39] [info] cuDNN Version: 9.10
+[2025-06-11 10:17:39] [info] Create infer model success
+[2025-06-11 10:17:39] [info] 	images : 1x3x1280x1280.
+[2025-06-11 10:17:39] [info] 	output0 : 1x5x33600
+[2025-06-11 10:17:39] [info] Create infer model success
+[2025-06-11 10:17:39] [info] Create infer assets success
+[2025-06-11 10:17:39] [info] Start run det infer.
+[2025-06-11 10:17:39] [info] Run a single roi.
+[2025-06-11 10:17:39] [info] Running model id 0002
+[2025-06-11 10:17:39] [info] Start RunInferModel
+[2025-06-11 10:17:39] [info] input name: images
+[2025-06-11 10:17:39] [info] output name: output0
+[2025-06-11 10:17:39] [info] Running model ...
+[2025-06-11 10:17:40] [info] Run model success
+[2025-06-11 10:17:40] [info] RunInferModel overlaps 390 ms
+[2025-06-11 10:17:40] [info] Class num: 1
+[2025-06-11 10:17:40] [info] Destroy the engine success.
+[2025-06-11 10:48:14] [info] Load Module: 0001
+[2025-06-11 10:48:14] [info] Module class: DetInferModule
+[2025-06-11 10:48:14] [info] DetInferModule init
+[2025-06-11 10:48:14] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 10:48:14] [info] cuDNN Version: 9.10
+[2025-06-11 10:48:15] [info] Create infer model success
+[2025-06-11 10:48:15] [info] 	images : 1x3x1280x1280.
+[2025-06-11 10:48:15] [info] 	output0 : 1x12x33600
+[2025-06-11 10:48:15] [info] Create infer model success
+[2025-06-11 10:48:15] [info] Create infer assets success
+[2025-06-11 10:48:15] [info] Start run det infer.
+[2025-06-11 10:48:15] [info] Run a single roi.
+[2025-06-11 10:48:15] [info] Running model id 0001
+[2025-06-11 10:48:15] [info] Start RunInferModel
+[2025-06-11 10:48:15] [info] input name: images
+[2025-06-11 10:48:15] [info] output name: output0
+[2025-06-11 10:48:15] [info] Running model ...
+[2025-06-11 10:48:15] [info] Run model success
+[2025-06-11 10:48:15] [info] RunInferModel overlaps 353 ms
+[2025-06-11 10:48:15] [info] Class num: 3
+[2025-06-11 10:48:15] [info] Destroy the engine success.
+[2025-06-11 10:59:29] [info] Load Module: 0001
+[2025-06-11 10:59:29] [info] Module class: DetInferModule
+[2025-06-11 10:59:29] [info] Module init start.
+[2025-06-11 10:59:29] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 10:59:29] [info] cuDNN Version: 9.10
+[2025-06-11 10:59:29] [info] Create infer model success
+[2025-06-11 10:59:29] [info] 	images : 1x3x1280x1280.
+[2025-06-11 10:59:29] [info] 	output0 : 1x12x33600
+[2025-06-11 10:59:29] [info] Create infer model success
+[2025-06-11 10:59:29] [info] Create infer assets success
+[2025-06-11 10:59:29] [info] Start run det infer.
+[2025-06-11 10:59:29] [info] Run a single roi.
+[2025-06-11 10:59:29] [info] Running model id 0001
+[2025-06-11 10:59:29] [info] Start RunInferModel
+[2025-06-11 10:59:29] [info] input name: images
+[2025-06-11 10:59:29] [info] output name: output0
+[2025-06-11 10:59:29] [info] Running model ...
+[2025-06-11 10:59:29] [info] Run model success
+[2025-06-11 10:59:29] [info] RunInferModel overlaps 368 ms
+[2025-06-11 10:59:29] [info] Class num: 3
+[2025-06-11 10:59:30] [info] No object detected.
+[2025-06-11 10:59:30] [info] Run module 0001 failed
+[2025-06-11 10:59:30] [error] Run single roi 0 failed 5
+[2025-06-11 10:59:30] [info] No valid result found in the input image, please check out the input.
+[2025-06-11 10:59:33] [info] Load Module: 0001
+[2025-06-11 10:59:33] [info] Module class: DetInferModule
+[2025-06-11 10:59:33] [info] Module init start.
+[2025-06-11 10:59:33] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 10:59:33] [info] cuDNN Version: 9.10
+[2025-06-11 10:59:33] [info] Create infer model success
+[2025-06-11 10:59:33] [info] 	images : 1x3x1280x1280.
+[2025-06-11 10:59:33] [info] 	output0 : 1x12x33600
+[2025-06-11 10:59:33] [info] Create infer model success
+[2025-06-11 10:59:33] [info] Create infer assets success
+[2025-06-11 10:59:33] [info] Start run det infer.
+[2025-06-11 10:59:33] [info] Run a single roi.
+[2025-06-11 10:59:33] [info] Running model id 0001
+[2025-06-11 10:59:34] [info] Start RunInferModel
+[2025-06-11 10:59:34] [info] input name: images
+[2025-06-11 10:59:34] [info] output name: output0
+[2025-06-11 10:59:34] [info] Running model ...
+[2025-06-11 10:59:34] [info] Run model success
+[2025-06-11 10:59:34] [info] RunInferModel overlaps 403 ms
+[2025-06-11 10:59:34] [info] Class num: 3
+[2025-06-11 10:59:34] [info] No object detected.
+[2025-06-11 10:59:34] [info] Run module 0001 failed
+[2025-06-11 10:59:34] [error] Run single roi 0 failed 5
+[2025-06-11 10:59:34] [info] No valid result found in the input image, please check out the input.
+[2025-06-11 11:00:28] [info] Load Module: 0002
+[2025-06-11 11:00:28] [info] Module class: GlassBracketModule
+[2025-06-11 11:00:28] [info] Module init start.
+[2025-06-11 11:00:28] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:00:28] [info] cuDNN Version: 9.10
+[2025-06-11 11:00:29] [info] Create infer model success
+[2025-06-11 11:00:29] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:00:29] [info] 	output0 : 1x5x33600
+[2025-06-11 11:00:29] [info] Create infer model success
+[2025-06-11 11:00:29] [info] Create infer assets success
+[2025-06-11 11:00:29] [info] Start run det infer.
+[2025-06-11 11:00:29] [info] Run a single roi.
+[2025-06-11 11:00:29] [info] Running model id 0002
+[2025-06-11 11:00:29] [info] Start RunInferModel
+[2025-06-11 11:00:29] [info] input name: images
+[2025-06-11 11:00:29] [info] output name: output0
+[2025-06-11 11:00:29] [info] Running model ...
+[2025-06-11 11:00:29] [info] Run model success
+[2025-06-11 11:00:29] [info] RunInferModel overlaps 493 ms
+[2025-06-11 11:00:29] [info] Class num: 1
+[2025-06-11 11:00:29] [info] Destroy the engine success.
+[2025-06-11 11:22:14] [info] Load Module: 0003
+[2025-06-11 11:22:14] [info] Module class: WeldSegInferModule
+[2025-06-11 11:22:14] [info] Module init start.
+[2025-06-11 11:22:14] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:22:14] [info] cuDNN Version: 9.10
+[2025-06-11 11:22:15] [info] Create infer model success
+[2025-06-11 11:22:15] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:22:15] [info] 	output0 : 1x37x33600
+[2025-06-11 11:22:15] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:22:15] [info] Create infer model success
+[2025-06-11 11:22:15] [info] Create infer assets success
+[2025-06-11 11:22:15] [info] Start run infer sync.
+[2025-06-11 11:22:15] [info] Run a single roi.
+[2025-06-11 11:22:15] [info] Running model id 0003
+[2025-06-11 11:22:15] [info] Start RunInferModel
+[2025-06-11 11:22:15] [info] input name: images
+[2025-06-11 11:22:15] [info] output name: output0
+[2025-06-11 11:22:15] [info] output name: output1
+[2025-06-11 11:22:15] [info] Running model ...
+[2025-06-11 11:22:15] [info] Run model success
+[2025-06-11 11:22:15] [info] RunInferModel overlaps 415 ms
+[2025-06-11 11:22:15] [info] Class num: 1
+[2025-06-11 11:22:16] [info] Destroy the engine success.
+[2025-06-11 11:22:57] [info] Load Module: 0003
+[2025-06-11 11:22:57] [info] Module class: WeldSegInferModule
+[2025-06-11 11:22:57] [info] Module init start.
+[2025-06-11 11:22:57] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:22:57] [info] cuDNN Version: 9.10
+[2025-06-11 11:22:58] [info] Create infer model success
+[2025-06-11 11:22:58] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:22:58] [info] 	output0 : 1x37x33600
+[2025-06-11 11:22:58] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:22:58] [info] Create infer model success
+[2025-06-11 11:22:58] [info] Create infer assets success
+[2025-06-11 11:22:58] [info] Start run infer sync.
+[2025-06-11 11:22:58] [info] Run a single roi.
+[2025-06-11 11:22:58] [info] Running model id 0003
+[2025-06-11 11:22:58] [info] Start RunInferModel
+[2025-06-11 11:22:58] [info] input name: images
+[2025-06-11 11:22:58] [info] output name: output0
+[2025-06-11 11:22:58] [info] output name: output1
+[2025-06-11 11:22:58] [info] Running model ...
+[2025-06-11 11:22:59] [info] Run model success
+[2025-06-11 11:22:59] [info] RunInferModel overlaps 421 ms
+[2025-06-11 11:22:59] [info] Class num: 1
+[2025-06-11 11:22:59] [info] Destroy the engine success.
+[2025-06-11 11:23:11] [info] Load Module: 0003
+[2025-06-11 11:23:11] [info] Module class: WeldSegInferModule
+[2025-06-11 11:23:11] [info] Module init start.
+[2025-06-11 11:23:11] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:23:11] [info] cuDNN Version: 9.10
+[2025-06-11 11:23:11] [info] Create infer model success
+[2025-06-11 11:23:11] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:23:11] [info] 	output0 : 1x37x33600
+[2025-06-11 11:23:11] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:23:11] [info] Create infer model success
+[2025-06-11 11:23:11] [info] Create infer assets success
+[2025-06-11 11:23:12] [info] Start run infer sync.
+[2025-06-11 11:23:12] [info] Run a single roi.
+[2025-06-11 11:23:12] [info] Running model id 0003
+[2025-06-11 11:23:12] [info] Start RunInferModel
+[2025-06-11 11:23:12] [info] input name: images
+[2025-06-11 11:23:12] [info] output name: output0
+[2025-06-11 11:23:12] [info] output name: output1
+[2025-06-11 11:23:12] [info] Running model ...
+[2025-06-11 11:23:12] [info] Run model success
+[2025-06-11 11:23:12] [info] RunInferModel overlaps 414 ms
+[2025-06-11 11:23:12] [info] Class num: 1
+[2025-06-11 11:23:12] [info] Destroy the engine success.
+[2025-06-11 11:25:11] [info] Load Module: 0003
+[2025-06-11 11:25:11] [info] Module class: WeldSegInferModule
+[2025-06-11 11:25:11] [info] Module init start.
+[2025-06-11 11:25:11] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:25:11] [info] cuDNN Version: 9.10
+[2025-06-11 11:25:11] [info] Create infer model success
+[2025-06-11 11:25:11] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:25:11] [info] 	output0 : 1x37x33600
+[2025-06-11 11:25:11] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:25:11] [info] Create infer model success
+[2025-06-11 11:25:11] [info] Create infer assets success
+[2025-06-11 11:25:11] [info] Start run infer sync.
+[2025-06-11 11:25:37] [info] Load Module: 0003
+[2025-06-11 11:25:37] [info] Module class: WeldSegInferModule
+[2025-06-11 11:25:37] [info] Module init start.
+[2025-06-11 11:25:37] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:25:37] [info] cuDNN Version: 9.10
+[2025-06-11 11:25:37] [info] Create infer model success
+[2025-06-11 11:25:37] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:25:37] [info] 	output0 : 1x37x33600
+[2025-06-11 11:25:37] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:25:37] [info] Create infer model success
+[2025-06-11 11:25:37] [info] Create infer assets success
+[2025-06-11 11:25:37] [info] Start run infer sync.
+[2025-06-11 11:26:22] [info] Load Module: 0003
+[2025-06-11 11:26:22] [info] Module class: WeldSegInferModule
+[2025-06-11 11:26:22] [info] Module init start.
+[2025-06-11 11:26:22] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:26:22] [info] cuDNN Version: 9.10
+[2025-06-11 11:26:23] [info] Create infer model success
+[2025-06-11 11:26:23] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:26:23] [info] 	output0 : 1x37x33600
+[2025-06-11 11:26:23] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:26:23] [info] Create infer model success
+[2025-06-11 11:26:23] [info] Create infer assets success
+[2025-06-11 11:26:23] [info] Start run infer sync.
+[2025-06-11 11:26:23] [info] Run a single roi.
+[2025-06-11 11:26:23] [info] Running model id 0003
+[2025-06-11 11:26:23] [info] Start RunInferModel
+[2025-06-11 11:26:23] [info] input name: images
+[2025-06-11 11:26:23] [info] output name: output0
+[2025-06-11 11:26:23] [info] output name: output1
+[2025-06-11 11:26:23] [info] Running model ...
+[2025-06-11 11:26:23] [info] Run model success
+[2025-06-11 11:26:23] [info] RunInferModel overlaps 406 ms
+[2025-06-11 11:26:23] [info] Class num: 1
+[2025-06-11 11:26:24] [info] Destroy the engine success.
+[2025-06-11 11:36:28] [info] Load Module: 0003
+[2025-06-11 11:36:28] [info] Module class: WeldSegInferModule
+[2025-06-11 11:36:28] [info] Module init start.
+[2025-06-11 11:36:28] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:36:28] [info] cuDNN Version: 9.10
+[2025-06-11 11:36:28] [info] Create infer model success
+[2025-06-11 11:36:28] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:36:28] [info] 	output0 : 1x37x33600
+[2025-06-11 11:36:28] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:36:28] [info] Create infer model success
+[2025-06-11 11:36:28] [info] Create infer assets success
+[2025-06-11 11:36:28] [info] Start run infer sync.
+[2025-06-11 11:42:03] [info] Load Module: 0003
+[2025-06-11 11:42:03] [info] Module class: WeldSegInferModule
+[2025-06-11 11:42:03] [info] Module init start.
+[2025-06-11 11:42:03] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:42:03] [info] cuDNN Version: 9.10
+[2025-06-11 11:42:03] [info] Create infer model success
+[2025-06-11 11:42:03] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:42:03] [info] 	output0 : 1x37x33600
+[2025-06-11 11:42:03] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:42:03] [info] Create infer model success
+[2025-06-11 11:42:03] [info] Create infer assets success
+[2025-06-11 11:42:03] [info] Start run infer sync.
+[2025-06-11 11:42:03] [info] Run a single roi.
+[2025-06-11 11:42:03] [info] Running model id 0003
+[2025-06-11 11:42:03] [info] Start RunInferModel
+[2025-06-11 11:42:03] [info] input name: images
+[2025-06-11 11:42:03] [info] output name: output0
+[2025-06-11 11:42:03] [info] output name: output1
+[2025-06-11 11:42:03] [info] Running model ...
+[2025-06-11 11:42:04] [info] Run model success
+[2025-06-11 11:42:04] [info] RunInferModel overlaps 404 ms
+[2025-06-11 11:42:04] [info] Class num: 1
+[2025-06-11 11:42:04] [info] Destroy the engine success.
+[2025-06-11 11:42:16] [info] Load Module: 0003
+[2025-06-11 11:42:16] [info] Module class: WeldSegInferModule
+[2025-06-11 11:42:16] [info] Module init start.
+[2025-06-11 11:42:16] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 11:42:16] [info] cuDNN Version: 9.10
+[2025-06-11 11:42:16] [info] Create infer model success
+[2025-06-11 11:42:16] [info] 	images : 1x3x1280x1280.
+[2025-06-11 11:42:16] [info] 	output0 : 1x37x33600
+[2025-06-11 11:42:16] [info] 	output1 : 1x32x320x320
+[2025-06-11 11:42:16] [info] Create infer model success
+[2025-06-11 11:42:16] [info] Create infer assets success
+[2025-06-11 11:42:17] [info] Start run infer sync.
+[2025-06-11 11:42:17] [info] Run a single roi.
+[2025-06-11 11:42:17] [info] Running model id 0003
+[2025-06-11 11:42:17] [info] Start RunInferModel
+[2025-06-11 11:42:17] [info] input name: images
+[2025-06-11 11:42:17] [info] output name: output0
+[2025-06-11 11:42:17] [info] output name: output1
+[2025-06-11 11:42:17] [info] Running model ...
+[2025-06-11 11:42:17] [info] Run model success
+[2025-06-11 11:42:17] [info] RunInferModel overlaps 417 ms
+[2025-06-11 11:42:17] [info] Class num: 1
+[2025-06-11 11:42:18] [info] Destroy the engine success.
+[2025-06-11 19:32:26] [info] Load Module: 0003
+[2025-06-11 19:32:26] [info] Module class: WeldSegInferModule
+[2025-06-11 19:32:26] [info] Start init model and cfgs
+[2025-06-11 19:32:26] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:32:26] [info] cuDNN Version: 9.10
+[2025-06-11 19:32:27] [info] Create infer model success
+[2025-06-11 19:32:27] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:32:27] [info] 	output0 : 1x37x33600
+[2025-06-11 19:32:27] [info] 	output1 : 1x32x320x320
+[2025-06-11 19:32:27] [info] Create infer model success
+[2025-06-11 19:32:27] [info] WeldSegInferModule initialized successfully
+[2025-06-11 19:32:27] [info] Create infer assets success
+[2025-06-11 19:32:27] [info] Start run infer sync.
+[2025-06-11 19:32:27] [info] Run a single roi.
+[2025-06-11 19:32:27] [info] Running model id 0003
+[2025-06-11 19:32:27] [info] Start RunInferModel
+[2025-06-11 19:32:27] [info] input name: images
+[2025-06-11 19:32:27] [info] output name: output0
+[2025-06-11 19:32:27] [info] output name: output1
+[2025-06-11 19:32:27] [info] Running model ...
+[2025-06-11 19:32:28] [info] Run model success
+[2025-06-11 19:32:28] [info] RunInferModel overlaps 473 ms
+[2025-06-11 19:32:28] [info] Class num: 1
+[2025-06-11 19:32:28] [info] Destroy the engine success.
+[2025-06-11 19:32:50] [info] Load Module: 0003
+[2025-06-11 19:32:50] [info] Module class: WeldSegInferModule
+[2025-06-11 19:32:50] [info] Start init model and cfgs
+[2025-06-11 19:32:50] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:32:50] [info] cuDNN Version: 9.10
+[2025-06-11 19:32:50] [info] Create infer model success
+[2025-06-11 19:32:50] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:32:50] [info] 	output0 : 1x37x33600
+[2025-06-11 19:32:50] [info] 	output1 : 1x32x320x320
+[2025-06-11 19:32:50] [info] Create infer model success
+[2025-06-11 19:32:50] [info] WeldSegInferModule initialized successfully
+[2025-06-11 19:32:50] [info] Create infer assets success
+[2025-06-11 19:32:50] [info] Start run infer sync.
+[2025-06-11 19:32:50] [info] Run a single roi.
+[2025-06-11 19:32:50] [info] Running model id 0003
+[2025-06-11 19:32:50] [info] Start RunInferModel
+[2025-06-11 19:32:50] [info] input name: images
+[2025-06-11 19:32:50] [info] output name: output0
+[2025-06-11 19:32:50] [info] output name: output1
+[2025-06-11 19:32:50] [info] Running model ...
+[2025-06-11 19:32:51] [info] Run model success
+[2025-06-11 19:32:51] [info] RunInferModel overlaps 445 ms
+[2025-06-11 19:32:51] [info] Class num: 1
+[2025-06-11 19:32:51] [info] Destroy the engine success.
+[2025-06-11 19:34:04] [info] Load Module: 0001
+[2025-06-11 19:34:04] [info] Module class: DetInferModule
+[2025-06-11 19:34:04] [info] Start init model and cfgs
+[2025-06-11 19:34:04] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:34:04] [info] cuDNN Version: 9.10
+[2025-06-11 19:34:04] [info] Create infer model success
+[2025-06-11 19:34:04] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:34:04] [info] 	output0 : 1x12x33600
+[2025-06-11 19:34:04] [info] Create infer model success
+[2025-06-11 19:34:04] [info] Create infer assets success
+[2025-06-11 19:34:05] [info] Start run det infer.
+[2025-06-11 19:34:05] [info] Run a single roi.
+[2025-06-11 19:34:05] [info] Running model id 0001
+[2025-06-11 19:34:05] [info] Start RunInferModel
+[2025-06-11 19:34:05] [info] input name: images
+[2025-06-11 19:34:05] [info] output name: output0
+[2025-06-11 19:34:05] [info] Running model ...
+[2025-06-11 19:34:05] [info] Run model success
+[2025-06-11 19:34:05] [info] RunInferModel overlaps 532 ms
+[2025-06-11 19:34:06] [info] Destroy the engine success.
+[2025-06-11 19:35:18] [info] Load Module: 0001
+[2025-06-11 19:35:18] [info] Module class: DetInferModule
+[2025-06-11 19:35:18] [info] Start init model and cfgs
+[2025-06-11 19:35:18] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:35:18] [info] cuDNN Version: 9.10
+[2025-06-11 19:35:19] [info] Create infer model success
+[2025-06-11 19:35:19] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:35:19] [info] 	output0 : 1x12x33600
+[2025-06-11 19:35:19] [info] Create infer model success
+[2025-06-11 19:35:19] [info] Create infer assets success
+[2025-06-11 19:35:19] [info] Start run det infer.
+[2025-06-11 19:35:19] [info] Run a single roi.
+[2025-06-11 19:35:19] [info] Running model id 0001
+[2025-06-11 19:35:19] [info] Start RunInferModel
+[2025-06-11 19:35:19] [info] input name: images
+[2025-06-11 19:35:19] [info] output name: output0
+[2025-06-11 19:35:19] [info] Running model ...
+[2025-06-11 19:35:19] [info] Run model success
+[2025-06-11 19:35:19] [info] RunInferModel overlaps 370 ms
+[2025-06-11 19:35:20] [info] Destroy the engine success.
+[2025-06-11 19:41:53] [info] Load Module: 0001
+[2025-06-11 19:41:53] [info] Module class: DetInferModule
+[2025-06-11 19:41:53] [info] Start init model and cfgs
+[2025-06-11 19:41:53] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:41:53] [info] cuDNN Version: 9.10
+[2025-06-11 19:41:54] [info] Create infer model success
+[2025-06-11 19:41:54] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:41:54] [info] 	output0 : 1x12x33600
+[2025-06-11 19:41:54] [info] Create infer model success
+[2025-06-11 19:41:54] [info] Create infer assets success
+[2025-06-11 19:41:54] [info] Start run det infer.
+[2025-06-11 19:41:54] [info] Run a single roi.
+[2025-06-11 19:41:54] [info] Running model id 0001
+[2025-06-11 19:41:54] [info] Start RunInferModel
+[2025-06-11 19:41:54] [info] input name: images
+[2025-06-11 19:41:54] [info] output name: output0
+[2025-06-11 19:41:54] [info] Running model ...
+[2025-06-11 19:41:54] [info] Run model success
+[2025-06-11 19:41:54] [info] RunInferModel overlaps 372 ms
+[2025-06-11 19:41:55] [info] Destroy the engine success.
+[2025-06-11 19:42:54] [info] Load Module: 0002
+[2025-06-11 19:42:54] [info] Module class: GlassBracketModule
+[2025-06-11 19:42:54] [info] Start init model and cfgs
+[2025-06-11 19:42:54] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-11 19:42:54] [info] cuDNN Version: 9.10
+[2025-06-11 19:42:55] [info] Create infer model success
+[2025-06-11 19:42:55] [info] 	images : 1x3x1280x1280.
+[2025-06-11 19:42:55] [info] 	output0 : 1x5x33600
+[2025-06-11 19:42:55] [info] Create infer model success
+[2025-06-11 19:42:55] [info] Create infer assets success
+[2025-06-11 19:42:55] [info] Start run det infer.
+[2025-06-11 19:42:55] [info] Run a single roi.
+[2025-06-11 19:42:55] [info] Running model id 0002
+[2025-06-11 19:42:55] [info] Start RunInferModel
+[2025-06-11 19:42:55] [info] input name: images
+[2025-06-11 19:42:55] [info] output name: output0
+[2025-06-11 19:42:55] [info] Running model ...
+[2025-06-11 19:42:55] [info] Run model success
+[2025-06-11 19:42:55] [info] RunInferModel overlaps 422 ms
+[2025-06-11 19:42:56] [info] Destroy the engine success.
+[2025-06-12 08:32:39] [info] Load Module: 0002
+[2025-06-12 08:32:39] [info] Module class: GlassBracketModule
+[2025-06-12 08:32:39] [info] Start init model and cfgs
+[2025-06-12 08:32:39] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:32:39] [info] cuDNN Version: 9.10
+[2025-06-12 08:32:40] [info] Create infer model success
+[2025-06-12 08:32:40] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:32:40] [info] 	output0 : 1x5x33600
+[2025-06-12 08:32:40] [info] Create infer model success
+[2025-06-12 08:32:40] [info] Create infer assets success
+[2025-06-12 08:32:40] [info] Start run det infer.
+[2025-06-12 08:32:40] [info] Run a single roi.
+[2025-06-12 08:32:40] [info] Running model id 0002
+[2025-06-12 08:32:40] [info] Start RunInferModel
+[2025-06-12 08:32:40] [info] input name: images
+[2025-06-12 08:32:40] [info] output name: output0
+[2025-06-12 08:32:40] [info] Running model ...
+[2025-06-12 08:32:40] [info] Run model success
+[2025-06-12 08:32:40] [info] RunInferModel overlaps 370 ms
+[2025-06-12 08:32:40] [info] Destroy the engine success.
+[2025-06-12 08:38:21] [info] Load Module: 0002
+[2025-06-12 08:38:21] [info] Module class: GlassBracketModule
+[2025-06-12 08:38:21] [info] Start init model and cfgs
+[2025-06-12 08:38:21] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:38:21] [info] cuDNN Version: 9.10
+[2025-06-12 08:38:22] [info] Create infer model success
+[2025-06-12 08:38:22] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:38:22] [info] 	output0 : 1x5x33600
+[2025-06-12 08:38:22] [info] Create infer model success
+[2025-06-12 08:38:22] [info] Create infer assets success
+[2025-06-12 08:38:22] [info] Start run det infer.
+[2025-06-12 08:38:22] [info] Run a single roi.
+[2025-06-12 08:38:22] [info] Running model id 0002
+[2025-06-12 08:38:22] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 08:38:22] [info] Start RunInferModel
+[2025-06-12 08:38:22] [info] input name: images
+[2025-06-12 08:38:22] [info] output name: output0
+[2025-06-12 08:38:22] [info] Running model ...
+[2025-06-12 08:38:22] [info] Run model success
+[2025-06-12 08:38:22] [info] RunInferModel overlaps 402 ms
+[2025-06-12 08:38:22] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:38:22] [info] Destroy the engine success.
+[2025-06-12 08:40:01] [info] Load Module: 0002
+[2025-06-12 08:40:01] [info] Module class: GlassBracketModule
+[2025-06-12 08:40:01] [info] Start init model and cfgs
+[2025-06-12 08:40:01] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:40:01] [info] cuDNN Version: 9.10
+[2025-06-12 08:40:01] [info] Create infer model success
+[2025-06-12 08:40:01] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:40:01] [info] 	output0 : 1x5x33600
+[2025-06-12 08:40:01] [info] Create infer model success
+[2025-06-12 08:40:01] [info] Create infer assets success
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 598 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:02] [info] Running model id 0002
+[2025-06-12 08:40:02] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:02] [info] Start RunInferModel
+[2025-06-12 08:40:02] [info] input name: images
+[2025-06-12 08:40:02] [info] output name: output0
+[2025-06-12 08:40:02] [info] Running model ...
+[2025-06-12 08:40:02] [info] Run model success
+[2025-06-12 08:40:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:02] [info] Start run det infer.
+[2025-06-12 08:40:02] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Start run det infer.
+[2025-06-12 08:40:03] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Start run det infer.
+[2025-06-12 08:40:03] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Start run det infer.
+[2025-06-12 08:40:03] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Start run det infer.
+[2025-06-12 08:40:03] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Start run det infer.
+[2025-06-12 08:40:03] [info] Run a single roi.
+[2025-06-12 08:40:03] [info] Running model id 0002
+[2025-06-12 08:40:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:40:03] [info] Start RunInferModel
+[2025-06-12 08:40:03] [info] input name: images
+[2025-06-12 08:40:03] [info] output name: output0
+[2025-06-12 08:40:03] [info] Running model ...
+[2025-06-12 08:40:03] [info] Run model success
+[2025-06-12 08:40:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:40:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:40:03] [info] Destroy the engine success.
+[2025-06-12 08:43:33] [info] Load Module: 0002
+[2025-06-12 08:43:33] [info] Module class: GlassBracketModule
+[2025-06-12 08:43:33] [info] Start init model and cfgs
+[2025-06-12 08:43:33] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:43:33] [info] cuDNN Version: 9.10
+[2025-06-12 08:43:34] [info] Create infer model success
+[2025-06-12 08:43:34] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:43:34] [info] 	output0 : 1x5x33600
+[2025-06-12 08:43:34] [info] Create infer model success
+[2025-06-12 08:43:34] [info] Create infer assets success
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 21 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 377 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 20 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 10 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:34] [info] Start run det infer.
+[2025-06-12 08:43:34] [info] Run a single roi.
+[2025-06-12 08:43:34] [info] Running model id 0002
+[2025-06-12 08:43:34] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:43:34] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:43:34] [info] Start RunInferModel
+[2025-06-12 08:43:34] [info] input name: images
+[2025-06-12 08:43:34] [info] output name: output0
+[2025-06-12 08:43:34] [info] Running model ...
+[2025-06-12 08:43:34] [info] Run model success
+[2025-06-12 08:43:34] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:43:34] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:35] [info] Start run det infer.
+[2025-06-12 08:43:35] [info] Run a single roi.
+[2025-06-12 08:43:35] [info] Running model id 0002
+[2025-06-12 08:43:35] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:43:35] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:43:35] [info] Start RunInferModel
+[2025-06-12 08:43:35] [info] input name: images
+[2025-06-12 08:43:35] [info] output name: output0
+[2025-06-12 08:43:35] [info] Running model ...
+[2025-06-12 08:43:35] [info] Run model success
+[2025-06-12 08:43:35] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:43:35] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:35] [info] Start run det infer.
+[2025-06-12 08:43:35] [info] Run a single roi.
+[2025-06-12 08:43:35] [info] Running model id 0002
+[2025-06-12 08:43:35] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:43:35] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 08:43:35] [info] Start RunInferModel
+[2025-06-12 08:43:35] [info] input name: images
+[2025-06-12 08:43:35] [info] output name: output0
+[2025-06-12 08:43:35] [info] Running model ...
+[2025-06-12 08:43:35] [info] Run model success
+[2025-06-12 08:43:35] [info] RunInferModel overlaps 10 ms
+[2025-06-12 08:43:35] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:35] [info] Start run det infer.
+[2025-06-12 08:43:35] [info] Run a single roi.
+[2025-06-12 08:43:35] [info] Running model id 0002
+[2025-06-12 08:43:35] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:43:35] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:43:35] [info] Start RunInferModel
+[2025-06-12 08:43:35] [info] input name: images
+[2025-06-12 08:43:35] [info] output name: output0
+[2025-06-12 08:43:35] [info] Running model ...
+[2025-06-12 08:43:35] [info] Run model success
+[2025-06-12 08:43:35] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:43:35] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:35] [info] Start run det infer.
+[2025-06-12 08:43:35] [info] Run a single roi.
+[2025-06-12 08:43:35] [info] Running model id 0002
+[2025-06-12 08:43:35] [info] Change the channel overlaps 21 ms
+[2025-06-12 08:43:35] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 08:43:35] [info] Start RunInferModel
+[2025-06-12 08:43:35] [info] input name: images
+[2025-06-12 08:43:35] [info] output name: output0
+[2025-06-12 08:43:35] [info] Running model ...
+[2025-06-12 08:43:35] [info] Run model success
+[2025-06-12 08:43:35] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:43:35] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:43:35] [info] Destroy the engine success.
+[2025-06-12 08:54:53] [info] Load Module: 0002
+[2025-06-12 08:54:53] [info] Module class: GlassBracketModule
+[2025-06-12 08:54:53] [info] Start init model and cfgs
+[2025-06-12 08:54:53] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:54:53] [info] cuDNN Version: 9.10
+[2025-06-12 08:54:54] [info] Create infer model success
+[2025-06-12 08:54:54] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:54:54] [info] 	output0 : 1x5x33600
+[2025-06-12 08:54:54] [info] Create infer model success
+[2025-06-12 08:54:54] [info] Create infer assets success
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 393 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 23 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 25 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 33 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 20 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:54] [info] Run a single roi.
+[2025-06-12 08:54:54] [info] Running model id 0002
+[2025-06-12 08:54:54] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:54:54] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:54:54] [info] Start RunInferModel
+[2025-06-12 08:54:54] [info] input name: images
+[2025-06-12 08:54:54] [info] output name: output0
+[2025-06-12 08:54:54] [info] Running model ...
+[2025-06-12 08:54:54] [info] Run model success
+[2025-06-12 08:54:54] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:54] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 16 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 19 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 19 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Start run det infer.
+[2025-06-12 08:54:55] [info] Run a single roi.
+[2025-06-12 08:54:55] [info] Running model id 0002
+[2025-06-12 08:54:55] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:54:55] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 08:54:55] [info] Start RunInferModel
+[2025-06-12 08:54:55] [info] input name: images
+[2025-06-12 08:54:55] [info] output name: output0
+[2025-06-12 08:54:55] [info] Running model ...
+[2025-06-12 08:54:55] [info] Run model success
+[2025-06-12 08:54:55] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:54:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:54:55] [info] Destroy the engine success.
+[2025-06-12 08:59:01] [info] Load Module: 0002
+[2025-06-12 08:59:01] [info] Module class: GlassBracketModule
+[2025-06-12 08:59:01] [info] Start init model and cfgs
+[2025-06-12 08:59:01] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 08:59:01] [info] cuDNN Version: 9.10
+[2025-06-12 08:59:01] [info] Create infer model success
+[2025-06-12 08:59:01] [info] 	images : 1x3x1280x1280.
+[2025-06-12 08:59:01] [info] 	output0 : 1x5x33600
+[2025-06-12 08:59:01] [info] Create infer model success
+[2025-06-12 08:59:01] [info] Create infer assets success
+[2025-06-12 08:59:01] [info] Start run det infer.
+[2025-06-12 08:59:01] [info] Run a single roi.
+[2025-06-12 08:59:01] [info] Running model id 0002
+[2025-06-12 08:59:01] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:01] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:01] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:59:01] [info] Start RunInferModel
+[2025-06-12 08:59:01] [info] input name: images
+[2025-06-12 08:59:01] [info] output name: output0
+[2025-06-12 08:59:01] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 384 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 24 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 32 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 22 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 31 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 19 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 18 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 19 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 16 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 8 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:02] [info] Start run det infer.
+[2025-06-12 08:59:02] [info] Run a single roi.
+[2025-06-12 08:59:02] [info] Running model id 0002
+[2025-06-12 08:59:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 08:59:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 08:59:02] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 08:59:02] [info] Start RunInferModel
+[2025-06-12 08:59:02] [info] input name: images
+[2025-06-12 08:59:02] [info] output name: output0
+[2025-06-12 08:59:02] [info] Running model ...
+[2025-06-12 08:59:02] [info] Run model success
+[2025-06-12 08:59:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 08:59:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 08:59:03] [info] Destroy the engine success.
+[2025-06-12 09:02:02] [info] Load Module: 0002
+[2025-06-12 09:02:02] [info] Module class: GlassBracketModule
+[2025-06-12 09:02:02] [info] Start init model and cfgs
+[2025-06-12 09:02:02] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:02:02] [info] cuDNN Version: 9.10
+[2025-06-12 09:02:02] [info] Create infer model success
+[2025-06-12 09:02:02] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:02:02] [info] 	output0 : 1x5x33600
+[2025-06-12 09:02:02] [info] Create infer model success
+[2025-06-12 09:02:02] [info] Create infer assets success
+[2025-06-12 09:02:02] [info] Start run det infer.
+[2025-06-12 09:02:02] [info] Run a single roi.
+[2025-06-12 09:02:02] [info] Running model id 0002
+[2025-06-12 09:02:02] [info] convrt the type overlaps 5 ms
+[2025-06-12 09:02:02] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:02] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:02] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:02:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:02:02] [info] Start RunInferModel
+[2025-06-12 09:02:02] [info] input name: images
+[2025-06-12 09:02:02] [info] output name: output0
+[2025-06-12 09:02:02] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 397 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 5 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Start run det infer.
+[2025-06-12 09:02:03] [info] Run a single roi.
+[2025-06-12 09:02:03] [info] Running model id 0002
+[2025-06-12 09:02:03] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:02:03] [info] split the channel overlaps 4 ms
+[2025-06-12 09:02:03] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:02:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:02:03] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:02:03] [info] Start RunInferModel
+[2025-06-12 09:02:03] [info] input name: images
+[2025-06-12 09:02:03] [info] output name: output0
+[2025-06-12 09:02:03] [info] Running model ...
+[2025-06-12 09:02:03] [info] Run model success
+[2025-06-12 09:02:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:02:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:02:03] [info] Destroy the engine success.
+[2025-06-12 09:03:39] [info] Load Module: 0002
+[2025-06-12 09:03:39] [info] Module class: GlassBracketModule
+[2025-06-12 09:03:39] [info] Start init model and cfgs
+[2025-06-12 09:03:39] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:03:39] [info] cuDNN Version: 9.10
+[2025-06-12 09:03:40] [info] Create infer model success
+[2025-06-12 09:03:40] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:03:40] [info] 	output0 : 1x5x33600
+[2025-06-12 09:03:40] [info] Create infer model success
+[2025-06-12 09:03:40] [info] Create infer assets success
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 383 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 5 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 9 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 5 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 5 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 5 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 5 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 15 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:40] [info] Start run det infer.
+[2025-06-12 09:03:40] [info] Run a single roi.
+[2025-06-12 09:03:40] [info] Running model id 0002
+[2025-06-12 09:03:40] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:40] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:40] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:40] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:03:40] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:03:40] [info] Start RunInferModel
+[2025-06-12 09:03:40] [info] input name: images
+[2025-06-12 09:03:40] [info] output name: output0
+[2025-06-12 09:03:40] [info] Running model ...
+[2025-06-12 09:03:40] [info] Run model success
+[2025-06-12 09:03:40] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:40] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:41] [info] Start run det infer.
+[2025-06-12 09:03:41] [info] Run a single roi.
+[2025-06-12 09:03:41] [info] Running model id 0002
+[2025-06-12 09:03:41] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:41] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:41] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:41] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:41] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:03:41] [info] Start RunInferModel
+[2025-06-12 09:03:41] [info] input name: images
+[2025-06-12 09:03:41] [info] output name: output0
+[2025-06-12 09:03:41] [info] Running model ...
+[2025-06-12 09:03:41] [info] Run model success
+[2025-06-12 09:03:41] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:03:41] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:41] [info] Start run det infer.
+[2025-06-12 09:03:41] [info] Run a single roi.
+[2025-06-12 09:03:41] [info] Running model id 0002
+[2025-06-12 09:03:41] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:41] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:41] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:41] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:03:41] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:03:41] [info] Start RunInferModel
+[2025-06-12 09:03:41] [info] input name: images
+[2025-06-12 09:03:41] [info] output name: output0
+[2025-06-12 09:03:41] [info] Running model ...
+[2025-06-12 09:03:41] [info] Run model success
+[2025-06-12 09:03:41] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:41] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:41] [info] Start run det infer.
+[2025-06-12 09:03:41] [info] Run a single roi.
+[2025-06-12 09:03:41] [info] Running model id 0002
+[2025-06-12 09:03:41] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:03:41] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:41] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:41] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:03:41] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:03:41] [info] Start RunInferModel
+[2025-06-12 09:03:41] [info] input name: images
+[2025-06-12 09:03:41] [info] output name: output0
+[2025-06-12 09:03:41] [info] Running model ...
+[2025-06-12 09:03:41] [info] Run model success
+[2025-06-12 09:03:41] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:03:41] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:41] [info] Start run det infer.
+[2025-06-12 09:03:41] [info] Run a single roi.
+[2025-06-12 09:03:41] [info] Running model id 0002
+[2025-06-12 09:03:41] [info] convrt the type overlaps 5 ms
+[2025-06-12 09:03:41] [info] split the channel overlaps 4 ms
+[2025-06-12 09:03:41] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:03:41] [info] Change the channel overlaps 14 ms
+[2025-06-12 09:03:41] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 09:03:41] [info] Start RunInferModel
+[2025-06-12 09:03:41] [info] input name: images
+[2025-06-12 09:03:41] [info] output name: output0
+[2025-06-12 09:03:41] [info] Running model ...
+[2025-06-12 09:03:41] [info] Run model success
+[2025-06-12 09:03:41] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:03:41] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:03:41] [info] Destroy the engine success.
+[2025-06-12 09:13:43] [info] Load Module: 0002
+[2025-06-12 09:13:43] [info] Module class: GlassBracketModule
+[2025-06-12 09:13:43] [info] Start init model and cfgs
+[2025-06-12 09:13:44] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:13:44] [info] cuDNN Version: 9.10
+[2025-06-12 09:13:44] [info] Create infer model success
+[2025-06-12 09:13:44] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:13:44] [info] 	output0 : 1x5x33600
+[2025-06-12 09:13:44] [info] Create infer model success
+[2025-06-12 09:13:44] [info] Create infer assets success
+[2025-06-12 09:13:44] [info] Start run det infer.
+[2025-06-12 09:13:44] [info] Run a single roi.
+[2025-06-12 09:13:44] [info] Running model id 0002
+[2025-06-12 09:13:44] [info] Change the channel overlaps 49 ms
+[2025-06-12 09:13:44] [info] Do the preprocess overlaps 64 ms
+[2025-06-12 09:13:44] [info] Start RunInferModel
+[2025-06-12 09:13:44] [info] input name: images
+[2025-06-12 09:13:44] [info] output name: output0
+[2025-06-12 09:13:44] [info] Running model ...
+[2025-06-12 09:13:45] [info] Run model success
+[2025-06-12 09:13:45] [info] RunInferModel overlaps 419 ms
+[2025-06-12 09:13:45] [info] No object detected.
+[2025-06-12 09:13:45] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:13:45] [info] Run module 0002 failed
+[2025-06-12 09:13:45] [error] Run single roi 0 failed 5
+[2025-06-12 09:13:45] [info] No valid result found in the input image, please check out the input.
+[2025-06-12 09:13:48] [info] Load Module: 0002
+[2025-06-12 09:13:48] [info] Module class: GlassBracketModule
+[2025-06-12 09:13:48] [info] Start init model and cfgs
+[2025-06-12 09:13:48] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:13:48] [info] cuDNN Version: 9.10
+[2025-06-12 09:13:48] [info] Create infer model success
+[2025-06-12 09:13:48] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:13:48] [info] 	output0 : 1x5x33600
+[2025-06-12 09:13:48] [info] Create infer model success
+[2025-06-12 09:13:48] [info] Create infer assets success
+[2025-06-12 09:13:48] [info] Start run det infer.
+[2025-06-12 09:13:48] [info] Run a single roi.
+[2025-06-12 09:13:48] [info] Running model id 0002
+[2025-06-12 09:13:48] [info] Change the channel overlaps 22 ms
+[2025-06-12 09:13:48] [info] Do the preprocess overlaps 39 ms
+[2025-06-12 09:13:48] [info] Start RunInferModel
+[2025-06-12 09:13:48] [info] input name: images
+[2025-06-12 09:13:48] [info] output name: output0
+[2025-06-12 09:13:48] [info] Running model ...
+[2025-06-12 09:13:49] [info] Run model success
+[2025-06-12 09:13:49] [info] RunInferModel overlaps 513 ms
+[2025-06-12 09:13:49] [info] No object detected.
+[2025-06-12 09:13:49] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:13:49] [info] Run module 0002 failed
+[2025-06-12 09:13:49] [error] Run single roi 0 failed 5
+[2025-06-12 09:13:49] [info] No valid result found in the input image, please check out the input.
+[2025-06-12 09:15:37] [info] Load Module: 0002
+[2025-06-12 09:15:37] [info] Module class: GlassBracketModule
+[2025-06-12 09:15:37] [info] Start init model and cfgs
+[2025-06-12 09:15:37] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:15:37] [info] cuDNN Version: 9.10
+[2025-06-12 09:15:38] [info] Create infer model success
+[2025-06-12 09:15:38] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:15:38] [info] 	output0 : 1x5x33600
+[2025-06-12 09:15:38] [info] Create infer model success
+[2025-06-12 09:15:38] [info] Create infer assets success
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 5 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 403 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 5 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:38] [info] Run model success
+[2025-06-12 09:15:38] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:38] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:38] [info] Start run det infer.
+[2025-06-12 09:15:38] [info] Run a single roi.
+[2025-06-12 09:15:38] [info] Running model id 0002
+[2025-06-12 09:15:38] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:38] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:38] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:38] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:38] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:15:38] [info] Start RunInferModel
+[2025-06-12 09:15:38] [info] input name: images
+[2025-06-12 09:15:38] [info] output name: output0
+[2025-06-12 09:15:38] [info] Running model ...
+[2025-06-12 09:15:39] [info] Run model success
+[2025-06-12 09:15:39] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:39] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:39] [info] Start run det infer.
+[2025-06-12 09:15:39] [info] Run a single roi.
+[2025-06-12 09:15:39] [info] Running model id 0002
+[2025-06-12 09:15:39] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:39] [info] split the channel overlaps 5 ms
+[2025-06-12 09:15:39] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:39] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:39] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:15:39] [info] Start RunInferModel
+[2025-06-12 09:15:39] [info] input name: images
+[2025-06-12 09:15:39] [info] output name: output0
+[2025-06-12 09:15:39] [info] Running model ...
+[2025-06-12 09:15:39] [info] Run model success
+[2025-06-12 09:15:39] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:39] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:39] [info] Start run det infer.
+[2025-06-12 09:15:39] [info] Run a single roi.
+[2025-06-12 09:15:39] [info] Running model id 0002
+[2025-06-12 09:15:39] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:39] [info] split the channel overlaps 4 ms
+[2025-06-12 09:15:39] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:39] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:15:39] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:15:39] [info] Start RunInferModel
+[2025-06-12 09:15:39] [info] input name: images
+[2025-06-12 09:15:39] [info] output name: output0
+[2025-06-12 09:15:39] [info] Running model ...
+[2025-06-12 09:15:39] [info] Run model success
+[2025-06-12 09:15:39] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:39] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:39] [info] Start run det infer.
+[2025-06-12 09:15:39] [info] Run a single roi.
+[2025-06-12 09:15:39] [info] Running model id 0002
+[2025-06-12 09:15:39] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:39] [info] split the channel overlaps 5 ms
+[2025-06-12 09:15:39] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:39] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:39] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:15:39] [info] Start RunInferModel
+[2025-06-12 09:15:39] [info] input name: images
+[2025-06-12 09:15:39] [info] output name: output0
+[2025-06-12 09:15:39] [info] Running model ...
+[2025-06-12 09:15:39] [info] Run model success
+[2025-06-12 09:15:39] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:39] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:39] [info] Start run det infer.
+[2025-06-12 09:15:39] [info] Run a single roi.
+[2025-06-12 09:15:39] [info] Running model id 0002
+[2025-06-12 09:15:39] [info] convrt the type overlaps 4 ms
+[2025-06-12 09:15:39] [info] split the channel overlaps 5 ms
+[2025-06-12 09:15:39] [info] convert the channel overlaps 1 ms
+[2025-06-12 09:15:39] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:15:39] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:15:39] [info] Start RunInferModel
+[2025-06-12 09:15:39] [info] input name: images
+[2025-06-12 09:15:39] [info] output name: output0
+[2025-06-12 09:15:39] [info] Running model ...
+[2025-06-12 09:15:39] [info] Run model success
+[2025-06-12 09:15:39] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:15:39] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:15:39] [info] Destroy the engine success.
+[2025-06-12 09:18:22] [info] Load Module: 0002
+[2025-06-12 09:18:22] [info] Module class: GlassBracketModule
+[2025-06-12 09:18:22] [info] Start init model and cfgs
+[2025-06-12 09:18:22] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:18:22] [info] cuDNN Version: 9.10
+[2025-06-12 09:18:22] [info] Create infer model success
+[2025-06-12 09:18:22] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:18:22] [info] 	output0 : 1x5x33600
+[2025-06-12 09:18:22] [info] Create infer model success
+[2025-06-12 09:18:22] [info] Create infer assets success
+[2025-06-12 09:18:22] [info] Start run det infer.
+[2025-06-12 09:18:22] [info] Run a single roi.
+[2025-06-12 09:18:22] [info] Running model id 0002
+[2025-06-12 09:18:22] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:22] [info] Do the preprocess overlaps 27 ms
+[2025-06-12 09:18:22] [info] Start RunInferModel
+[2025-06-12 09:18:22] [info] input name: images
+[2025-06-12 09:18:22] [info] output name: output0
+[2025-06-12 09:18:22] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 400 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 11 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 14 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 25 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:23] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:18:23] [info] Start RunInferModel
+[2025-06-12 09:18:23] [info] input name: images
+[2025-06-12 09:18:23] [info] output name: output0
+[2025-06-12 09:18:23] [info] Running model ...
+[2025-06-12 09:18:23] [info] Run model success
+[2025-06-12 09:18:23] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:23] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:23] [info] Start run det infer.
+[2025-06-12 09:18:23] [info] Run a single roi.
+[2025-06-12 09:18:23] [info] Running model id 0002
+[2025-06-12 09:18:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:18:24] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:18:24] [info] Start RunInferModel
+[2025-06-12 09:18:24] [info] input name: images
+[2025-06-12 09:18:24] [info] output name: output0
+[2025-06-12 09:18:24] [info] Running model ...
+[2025-06-12 09:18:24] [info] Run model success
+[2025-06-12 09:18:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:18:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:18:24] [info] Destroy the engine success.
+[2025-06-12 09:24:30] [info] Load Module: 0002
+[2025-06-12 09:24:30] [info] Module class: GlassBracketModule
+[2025-06-12 09:24:30] [info] Start init model and cfgs
+[2025-06-12 09:24:30] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:24:30] [info] cuDNN Version: 9.10
+[2025-06-12 09:24:31] [info] Create infer model success
+[2025-06-12 09:24:31] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:24:31] [info] 	output0 : 1x5x33600
+[2025-06-12 09:24:31] [info] Create infer model success
+[2025-06-12 09:24:31] [info] Create infer assets success
+[2025-06-12 09:24:31] [info] Start run det infer.
+[2025-06-12 09:24:31] [info] Run a single roi.
+[2025-06-12 09:24:31] [info] Running model id 0002
+[2025-06-12 09:24:31] [info] Run module error OpenCV(4.7.0-dev) C:\GHA-OCV-2\_work\ci-gha-workflow\ci-gha-workflow\opencv\modules\core\src\copy.cpp:1026: error: (-215:Assertion failed) top >= 0 && bottom >= 0 && left >= 0 && right >= 0 && _src.dims() <= 2 in function 'cv::copyMakeBorder'
+
+[2025-06-12 09:24:31] [error] Run single roi 0 failed 7
+[2025-06-12 09:24:31] [info] No valid result found in the input image, please check out the input.
+[2025-06-12 09:31:47] [info] Load Module: 0002
+[2025-06-12 09:31:47] [info] Module class: GlassBracketModule
+[2025-06-12 09:31:47] [info] Start init model and cfgs
+[2025-06-12 09:31:47] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:31:47] [info] cuDNN Version: 9.10
+[2025-06-12 09:31:47] [info] Create infer model success
+[2025-06-12 09:31:47] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:31:47] [info] 	output0 : 1x5x33600
+[2025-06-12 09:31:47] [info] Create infer model success
+[2025-06-12 09:31:47] [info] Create infer assets success
+[2025-06-12 09:31:48] [info] Start run det infer.
+[2025-06-12 09:31:48] [info] Run a single roi.
+[2025-06-12 09:31:48] [info] Running model id 0002
+[2025-06-12 09:31:48] [info] Run module error OpenCV(4.7.0-dev) C:\GHA-OCV-2\_work\ci-gha-workflow\ci-gha-workflow\opencv\modules\core\src\copy.cpp:1026: error: (-215:Assertion failed) top >= 0 && bottom >= 0 && left >= 0 && right >= 0 && _src.dims() <= 2 in function 'cv::copyMakeBorder'
+
+[2025-06-12 09:31:48] [error] Run single roi 0 failed 7
+[2025-06-12 09:31:48] [info] No valid result found in the input image, please check out the input.
+[2025-06-12 09:41:23] [info] Load Module: 0002
+[2025-06-12 09:41:23] [info] Module class: GlassBracketModule
+[2025-06-12 09:41:23] [info] Start init model and cfgs
+[2025-06-12 09:41:23] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:41:23] [info] cuDNN Version: 9.10
+[2025-06-12 09:41:23] [info] Create infer model success
+[2025-06-12 09:41:23] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:41:23] [info] 	output0 : 1x5x33600
+[2025-06-12 09:41:23] [info] Create infer model success
+[2025-06-12 09:41:23] [info] Create infer assets success
+[2025-06-12 09:41:23] [info] Start run det infer.
+[2025-06-12 09:41:23] [info] Run a single roi.
+[2025-06-12 09:41:23] [info] Running model id 0002
+[2025-06-12 09:41:23] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:23] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:41:23] [info] Start RunInferModel
+[2025-06-12 09:41:23] [info] input name: images
+[2025-06-12 09:41:23] [info] output name: output0
+[2025-06-12 09:41:23] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 411 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 10 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 11 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 22 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 22 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 22 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 23 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 12 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Start run det infer.
+[2025-06-12 09:41:24] [info] Run a single roi.
+[2025-06-12 09:41:24] [info] Running model id 0002
+[2025-06-12 09:41:24] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:41:24] [info] Do the preprocess overlaps 24 ms
+[2025-06-12 09:41:24] [info] Start RunInferModel
+[2025-06-12 09:41:24] [info] input name: images
+[2025-06-12 09:41:24] [info] output name: output0
+[2025-06-12 09:41:24] [info] Running model ...
+[2025-06-12 09:41:24] [info] Run model success
+[2025-06-12 09:41:24] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:41:24] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:41:24] [info] Destroy the engine success.
+[2025-06-12 09:43:01] [info] Load Module: 0002
+[2025-06-12 09:43:01] [info] Module class: GlassBracketModule
+[2025-06-12 09:43:01] [info] Start init model and cfgs
+[2025-06-12 09:43:01] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:43:01] [info] cuDNN Version: 9.10
+[2025-06-12 09:43:02] [info] Create infer model success
+[2025-06-12 09:43:02] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:43:02] [info] 	output0 : 1x5x33600
+[2025-06-12 09:43:02] [info] Create infer model success
+[2025-06-12 09:43:02] [info] Create infer assets success
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 13 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 26 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 380 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 10 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 32 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 11 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:02] [info] Run a single roi.
+[2025-06-12 09:43:02] [info] Running model id 0002
+[2025-06-12 09:43:02] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:02] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:43:02] [info] Start RunInferModel
+[2025-06-12 09:43:02] [info] input name: images
+[2025-06-12 09:43:02] [info] output name: output0
+[2025-06-12 09:43:02] [info] Running model ...
+[2025-06-12 09:43:02] [info] Run model success
+[2025-06-12 09:43:02] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:02] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:02] [info] Start run det infer.
+[2025-06-12 09:43:03] [info] Run a single roi.
+[2025-06-12 09:43:03] [info] Running model id 0002
+[2025-06-12 09:43:03] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:43:03] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:43:03] [info] Start RunInferModel
+[2025-06-12 09:43:03] [info] input name: images
+[2025-06-12 09:43:03] [info] output name: output0
+[2025-06-12 09:43:03] [info] Running model ...
+[2025-06-12 09:43:03] [info] Run model success
+[2025-06-12 09:43:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:43:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:03] [info] Start run det infer.
+[2025-06-12 09:43:03] [info] Run a single roi.
+[2025-06-12 09:43:03] [info] Running model id 0002
+[2025-06-12 09:43:03] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:03] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:43:03] [info] Start RunInferModel
+[2025-06-12 09:43:03] [info] input name: images
+[2025-06-12 09:43:03] [info] output name: output0
+[2025-06-12 09:43:03] [info] Running model ...
+[2025-06-12 09:43:03] [info] Run model success
+[2025-06-12 09:43:03] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:43:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:03] [info] Start run det infer.
+[2025-06-12 09:43:03] [info] Run a single roi.
+[2025-06-12 09:43:03] [info] Running model id 0002
+[2025-06-12 09:43:03] [info] Change the channel overlaps 16 ms
+[2025-06-12 09:43:03] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:43:03] [info] Start RunInferModel
+[2025-06-12 09:43:03] [info] input name: images
+[2025-06-12 09:43:03] [info] output name: output0
+[2025-06-12 09:43:03] [info] Running model ...
+[2025-06-12 09:43:03] [info] Run model success
+[2025-06-12 09:43:03] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:43:03] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:43:03] [info] Destroy the engine success.
+[2025-06-12 09:58:51] [info] Load Module: 0002
+[2025-06-12 09:58:51] [info] Module class: GlassBracketModule
+[2025-06-12 09:58:51] [info] Start init model and cfgs
+[2025-06-12 09:58:52] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-12 09:58:52] [info] cuDNN Version: 9.10
+[2025-06-12 09:58:52] [info] Create infer model success
+[2025-06-12 09:58:52] [info] 	images : 1x3x1280x1280.
+[2025-06-12 09:58:52] [info] 	output0 : 1x5x33600
+[2025-06-12 09:58:52] [info] Create infer model success
+[2025-06-12 09:58:52] [info] Create infer assets success
+[2025-06-12 09:58:52] [info] Start run det infer.
+[2025-06-12 09:58:52] [info] Run a single roi.
+[2025-06-12 09:58:52] [info] Running model id 0002
+[2025-06-12 09:58:52] [info] Change the channel overlaps 21 ms
+[2025-06-12 09:58:52] [info] Do the preprocess overlaps 35 ms
+[2025-06-12 09:58:52] [info] Start RunInferModel
+[2025-06-12 09:58:52] [info] input name: images
+[2025-06-12 09:58:52] [info] output name: output0
+[2025-06-12 09:58:52] [info] Running model ...
+[2025-06-12 09:58:52] [info] Run model success
+[2025-06-12 09:58:52] [info] RunInferModel overlaps 382 ms
+[2025-06-12 09:58:52] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:52] [info] Start run det infer.
+[2025-06-12 09:58:52] [info] Run a single roi.
+[2025-06-12 09:58:52] [info] Running model id 0002
+[2025-06-12 09:58:52] [info] Change the channel overlaps 17 ms
+[2025-06-12 09:58:52] [info] Do the preprocess overlaps 31 ms
+[2025-06-12 09:58:52] [info] Start RunInferModel
+[2025-06-12 09:58:52] [info] input name: images
+[2025-06-12 09:58:52] [info] output name: output0
+[2025-06-12 09:58:52] [info] Running model ...
+[2025-06-12 09:58:52] [info] Run model success
+[2025-06-12 09:58:52] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:52] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:52] [info] Start run det infer.
+[2025-06-12 09:58:52] [info] Run a single roi.
+[2025-06-12 09:58:52] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 20 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 31 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 28 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 18 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 29 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 30 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 8 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Start run det infer.
+[2025-06-12 09:58:53] [info] Run a single roi.
+[2025-06-12 09:58:53] [info] Running model id 0002
+[2025-06-12 09:58:53] [info] Change the channel overlaps 19 ms
+[2025-06-12 09:58:53] [info] Do the preprocess overlaps 35 ms
+[2025-06-12 09:58:53] [info] Start RunInferModel
+[2025-06-12 09:58:53] [info] input name: images
+[2025-06-12 09:58:53] [info] output name: output0
+[2025-06-12 09:58:53] [info] Running model ...
+[2025-06-12 09:58:53] [info] Run model success
+[2025-06-12 09:58:53] [info] RunInferModel overlaps 9 ms
+[2025-06-12 09:58:53] [info] Do the postprocess overlaps 0 ms
+[2025-06-12 09:58:53] [info] Destroy the engine success.
+[2025-06-13 09:05:24] [info] Load Module: 0001
+[2025-06-13 09:05:24] [info] Module class: DetInferModule
+[2025-06-13 09:05:24] [info] Start init model and cfgs
+[2025-06-13 09:05:24] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 09:05:24] [info] cuDNN Version: 9.10
+[2025-06-13 09:05:24] [info] Create infer model success
+[2025-06-13 09:05:24] [info] 	images : 1x3x1280x1280.
+[2025-06-13 09:05:24] [info] 	output0 : 1x12x33600
+[2025-06-13 09:05:24] [info] Create infer model success
+[2025-06-13 09:05:24] [info] Create infer assets success
+[2025-06-13 09:05:25] [info] Start run det infer.
+[2025-06-13 09:05:25] [info] Run a single roi.
+[2025-06-13 09:05:25] [info] Running model id 0001
+[2025-06-13 09:05:25] [info] Do the preprocess overlaps 23 ms
+[2025-06-13 09:05:25] [info] Start RunInferModel
+[2025-06-13 09:05:25] [info] input name: images
+[2025-06-13 09:05:25] [info] output name: output0
+[2025-06-13 09:05:25] [info] Running model ...
+[2025-06-13 09:05:25] [info] Run model success
+[2025-06-13 09:05:25] [info] RunInferModel overlaps 542 ms
+[2025-06-13 09:05:25] [info] No object detected.
+[2025-06-13 09:05:25] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:05:25] [info] Run module 0001 failed
+[2025-06-13 09:05:25] [error] Run single roi 0 failed 5
+[2025-06-13 09:05:25] [info] No valid result found in the input image, please check out the input.
+[2025-06-13 09:06:29] [info] Load Module: 0001
+[2025-06-13 09:06:29] [info] Module class: DetInferModule
+[2025-06-13 09:06:29] [info] Start init model and cfgs
+[2025-06-13 09:06:29] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 09:06:29] [info] cuDNN Version: 9.10
+[2025-06-13 09:06:29] [info] Create infer model success
+[2025-06-13 09:06:29] [info] 	images : 1x3x1280x1280.
+[2025-06-13 09:06:29] [info] 	output0 : 1x12x33600
+[2025-06-13 09:06:29] [info] Create infer model success
+[2025-06-13 09:06:29] [info] Create infer assets success
+[2025-06-13 09:06:29] [info] Start run det infer.
+[2025-06-13 09:06:29] [info] Run a single roi.
+[2025-06-13 09:06:29] [info] Running model id 0001
+[2025-06-13 09:06:29] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 09:06:29] [info] Start RunInferModel
+[2025-06-13 09:06:29] [info] input name: images
+[2025-06-13 09:06:29] [info] output name: output0
+[2025-06-13 09:06:29] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 360 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 35 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 10 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 41 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:30] [info] Start run det infer.
+[2025-06-13 09:06:30] [info] Run a single roi.
+[2025-06-13 09:06:30] [info] Running model id 0001
+[2025-06-13 09:06:30] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:06:30] [info] Start RunInferModel
+[2025-06-13 09:06:30] [info] input name: images
+[2025-06-13 09:06:30] [info] output name: output0
+[2025-06-13 09:06:30] [info] Running model ...
+[2025-06-13 09:06:30] [info] Run model success
+[2025-06-13 09:06:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:30] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:31] [info] Start run det infer.
+[2025-06-13 09:06:31] [info] Run a single roi.
+[2025-06-13 09:06:31] [info] Running model id 0001
+[2025-06-13 09:06:31] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:06:31] [info] Start RunInferModel
+[2025-06-13 09:06:31] [info] input name: images
+[2025-06-13 09:06:31] [info] output name: output0
+[2025-06-13 09:06:31] [info] Running model ...
+[2025-06-13 09:06:31] [info] Run model success
+[2025-06-13 09:06:31] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:31] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:31] [info] Start run det infer.
+[2025-06-13 09:06:31] [info] Run a single roi.
+[2025-06-13 09:06:31] [info] Running model id 0001
+[2025-06-13 09:06:31] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 09:06:31] [info] Start RunInferModel
+[2025-06-13 09:06:31] [info] input name: images
+[2025-06-13 09:06:31] [info] output name: output0
+[2025-06-13 09:06:31] [info] Running model ...
+[2025-06-13 09:06:31] [info] Run model success
+[2025-06-13 09:06:31] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:06:31] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:06:31] [info] Destroy the engine success.
+[2025-06-13 09:15:53] [info] Load Module: 0001
+[2025-06-13 09:15:53] [info] Module class: DetInferModule
+[2025-06-13 09:15:53] [info] Start init model and cfgs
+[2025-06-13 09:15:53] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 09:15:53] [info] cuDNN Version: 9.10
+[2025-06-13 09:15:53] [info] Create infer model success
+[2025-06-13 09:15:53] [info] 	images : 1x3x1280x1280.
+[2025-06-13 09:15:53] [info] 	output0 : 1x12x33600
+[2025-06-13 09:15:53] [info] Create infer model success
+[2025-06-13 09:15:53] [info] Create infer assets success
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 33 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 379 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:54] [info] Run model success
+[2025-06-13 09:15:54] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:54] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:54] [info] Start run det infer.
+[2025-06-13 09:15:54] [info] Run a single roi.
+[2025-06-13 09:15:54] [info] Running model id 0001
+[2025-06-13 09:15:54] [info] Do the preprocess overlaps 33 ms
+[2025-06-13 09:15:54] [info] Start RunInferModel
+[2025-06-13 09:15:54] [info] input name: images
+[2025-06-13 09:15:54] [info] output name: output0
+[2025-06-13 09:15:54] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 35 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 9 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Start run det infer.
+[2025-06-13 09:15:55] [info] Run a single roi.
+[2025-06-13 09:15:55] [info] Running model id 0001
+[2025-06-13 09:15:55] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 09:15:55] [info] Start RunInferModel
+[2025-06-13 09:15:55] [info] input name: images
+[2025-06-13 09:15:55] [info] output name: output0
+[2025-06-13 09:15:55] [info] Running model ...
+[2025-06-13 09:15:55] [info] Run model success
+[2025-06-13 09:15:55] [info] RunInferModel overlaps 8 ms
+[2025-06-13 09:15:55] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 09:15:55] [info] Destroy the engine success.
+[2025-06-13 10:06:45] [info] Load Module: 0001
+[2025-06-13 10:06:45] [info] Module class: DetInferModule
+[2025-06-13 10:06:45] [info] Start init model and cfgs
+[2025-06-13 10:06:45] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 10:06:45] [info] cuDNN Version: 9.10
+[2025-06-13 10:06:46] [info] Create infer model success
+[2025-06-13 10:06:46] [info] 	images : 1x3x1280x1280.
+[2025-06-13 10:06:46] [info] 	output0 : 1x12x33600
+[2025-06-13 10:06:46] [info] Create infer model success
+[2025-06-13 10:06:46] [info] Create infer assets success
+[2025-06-13 10:06:46] [info] Start run det infer.
+[2025-06-13 10:06:46] [info] Run a single roi.
+[2025-06-13 10:06:46] [info] Running model id 0001
+[2025-06-13 10:06:46] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 10:06:46] [info] Start RunInferModel
+[2025-06-13 10:06:46] [info] input name: images
+[2025-06-13 10:06:46] [info] output name: output0
+[2025-06-13 10:06:46] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 380 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 32 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:47] [info] Do the preprocess overlaps 29 ms
+[2025-06-13 10:06:47] [info] Start RunInferModel
+[2025-06-13 10:06:47] [info] input name: images
+[2025-06-13 10:06:47] [info] output name: output0
+[2025-06-13 10:06:47] [info] Running model ...
+[2025-06-13 10:06:47] [info] Run model success
+[2025-06-13 10:06:47] [info] RunInferModel overlaps 8 ms
+[2025-06-13 10:06:47] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:47] [info] Start run det infer.
+[2025-06-13 10:06:47] [info] Run a single roi.
+[2025-06-13 10:06:47] [info] Running model id 0001
+[2025-06-13 10:06:48] [info] Do the preprocess overlaps 30 ms
+[2025-06-13 10:06:48] [info] Start RunInferModel
+[2025-06-13 10:06:48] [info] input name: images
+[2025-06-13 10:06:48] [info] output name: output0
+[2025-06-13 10:06:48] [info] Running model ...
+[2025-06-13 10:06:48] [info] Run model success
+[2025-06-13 10:06:48] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:06:48] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:48] [info] Start run det infer.
+[2025-06-13 10:06:48] [info] Run a single roi.
+[2025-06-13 10:06:48] [info] Running model id 0001
+[2025-06-13 10:06:48] [info] Do the preprocess overlaps 31 ms
+[2025-06-13 10:06:48] [info] Start RunInferModel
+[2025-06-13 10:06:48] [info] input name: images
+[2025-06-13 10:06:48] [info] output name: output0
+[2025-06-13 10:06:48] [info] Running model ...
+[2025-06-13 10:06:48] [info] Run model success
+[2025-06-13 10:06:48] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:48] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:48] [info] Start run det infer.
+[2025-06-13 10:06:48] [info] Run a single roi.
+[2025-06-13 10:06:48] [info] Running model id 0001
+[2025-06-13 10:06:48] [info] Do the preprocess overlaps 34 ms
+[2025-06-13 10:06:48] [info] Start RunInferModel
+[2025-06-13 10:06:48] [info] input name: images
+[2025-06-13 10:06:48] [info] output name: output0
+[2025-06-13 10:06:48] [info] Running model ...
+[2025-06-13 10:06:48] [info] Run model success
+[2025-06-13 10:06:48] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:06:48] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:48] [info] Destroy the engine success.
+[2025-06-13 10:06:54] [info] Load Module: 0002
+[2025-06-13 10:06:54] [info] Module class: GlassBracketModule
+[2025-06-13 10:06:54] [info] Start init model and cfgs
+[2025-06-13 10:06:54] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 10:06:54] [info] cuDNN Version: 9.10
+[2025-06-13 10:06:55] [info] Create infer model success
+[2025-06-13 10:06:55] [info] 	images : 1x3x1280x1280.
+[2025-06-13 10:06:55] [info] 	output0 : 1x5x33600
+[2025-06-13 10:06:55] [info] Create infer model success
+[2025-06-13 10:06:55] [info] Create infer assets success
+[2025-06-13 10:06:55] [info] Start run det infer.
+[2025-06-13 10:06:55] [info] Run a single roi.
+[2025-06-13 10:06:55] [info] Running model id 0002
+[2025-06-13 10:06:56] [info] Change the channel overlaps 89 ms
+[2025-06-13 10:06:56] [info] Do the preprocess overlaps 201 ms
+[2025-06-13 10:06:56] [info] Start RunInferModel
+[2025-06-13 10:06:56] [info] input name: images
+[2025-06-13 10:06:56] [info] output name: output0
+[2025-06-13 10:06:56] [info] Running model ...
+[2025-06-13 10:06:56] [info] Run model success
+[2025-06-13 10:06:56] [info] RunInferModel overlaps 398 ms
+[2025-06-13 10:06:56] [info] No object detected.
+[2025-06-13 10:06:56] [info] Do the postprocess overlaps 0 ms
+[2025-06-13 10:06:56] [info] Run module 0002 failed
+[2025-06-13 10:06:56] [error] Run single roi 0 failed 5
+[2025-06-13 10:06:56] [info] No valid result found in the input image, please check out the input.
+[2025-06-13 10:08:09] [info] Load Module: 0001
+[2025-06-13 10:08:09] [info] Module class: DetInferModule
+[2025-06-13 10:08:09] [info] Start init model and cfgs
+[2025-06-13 10:08:09] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 10:08:09] [info] cuDNN Version: 9.10
+[2025-06-13 10:08:10] [info] Create infer model success
+[2025-06-13 10:08:10] [info] 	images : 1x3x1280x1280.
+[2025-06-13 10:08:10] [info] 	output0 : 1x12x33600
+[2025-06-13 10:08:10] [info] Create infer model success
+[2025-06-13 10:08:10] [info] Create infer assets success
+[2025-06-13 10:08:10] [info] Start run det infer.
+[2025-06-13 10:08:10] [info] Run a single roi.
+[2025-06-13 10:08:10] [info] Running model id 0001
+[2025-06-13 10:08:10] [info] Do the preprocess overlaps 223 ms
+[2025-06-13 10:08:10] [info] Start RunInferModel
+[2025-06-13 10:08:10] [info] input name: images
+[2025-06-13 10:08:10] [info] output name: output0
+[2025-06-13 10:08:10] [info] Running model ...
+[2025-06-13 10:08:11] [info] Run model success
+[2025-06-13 10:08:11] [info] RunInferModel overlaps 367 ms
+[2025-06-13 10:08:11] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:11] [info] Start run det infer.
+[2025-06-13 10:08:11] [info] Run a single roi.
+[2025-06-13 10:08:11] [info] Running model id 0001
+[2025-06-13 10:08:11] [info] Do the preprocess overlaps 214 ms
+[2025-06-13 10:08:11] [info] Start RunInferModel
+[2025-06-13 10:08:11] [info] input name: images
+[2025-06-13 10:08:11] [info] output name: output0
+[2025-06-13 10:08:11] [info] Running model ...
+[2025-06-13 10:08:11] [info] Run model success
+[2025-06-13 10:08:11] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:11] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:11] [info] Start run det infer.
+[2025-06-13 10:08:11] [info] Run a single roi.
+[2025-06-13 10:08:11] [info] Running model id 0001
+[2025-06-13 10:08:11] [info] Do the preprocess overlaps 222 ms
+[2025-06-13 10:08:11] [info] Start RunInferModel
+[2025-06-13 10:08:11] [info] input name: images
+[2025-06-13 10:08:11] [info] output name: output0
+[2025-06-13 10:08:11] [info] Running model ...
+[2025-06-13 10:08:11] [info] Run model success
+[2025-06-13 10:08:11] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:11] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:11] [info] Start run det infer.
+[2025-06-13 10:08:11] [info] Run a single roi.
+[2025-06-13 10:08:11] [info] Running model id 0001
+[2025-06-13 10:08:12] [info] Do the preprocess overlaps 213 ms
+[2025-06-13 10:08:12] [info] Start RunInferModel
+[2025-06-13 10:08:12] [info] input name: images
+[2025-06-13 10:08:12] [info] output name: output0
+[2025-06-13 10:08:12] [info] Running model ...
+[2025-06-13 10:08:12] [info] Run model success
+[2025-06-13 10:08:12] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:12] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:12] [info] Start run det infer.
+[2025-06-13 10:08:12] [info] Run a single roi.
+[2025-06-13 10:08:12] [info] Running model id 0001
+[2025-06-13 10:08:12] [info] Do the preprocess overlaps 209 ms
+[2025-06-13 10:08:12] [info] Start RunInferModel
+[2025-06-13 10:08:12] [info] input name: images
+[2025-06-13 10:08:12] [info] output name: output0
+[2025-06-13 10:08:12] [info] Running model ...
+[2025-06-13 10:08:12] [info] Run model success
+[2025-06-13 10:08:12] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:12] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:12] [info] Start run det infer.
+[2025-06-13 10:08:12] [info] Run a single roi.
+[2025-06-13 10:08:12] [info] Running model id 0001
+[2025-06-13 10:08:12] [info] Do the preprocess overlaps 214 ms
+[2025-06-13 10:08:12] [info] Start RunInferModel
+[2025-06-13 10:08:12] [info] input name: images
+[2025-06-13 10:08:12] [info] output name: output0
+[2025-06-13 10:08:12] [info] Running model ...
+[2025-06-13 10:08:12] [info] Run model success
+[2025-06-13 10:08:12] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:08:12] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:12] [info] Start run det infer.
+[2025-06-13 10:08:12] [info] Run a single roi.
+[2025-06-13 10:08:12] [info] Running model id 0001
+[2025-06-13 10:08:13] [info] Do the preprocess overlaps 215 ms
+[2025-06-13 10:08:13] [info] Start RunInferModel
+[2025-06-13 10:08:13] [info] input name: images
+[2025-06-13 10:08:13] [info] output name: output0
+[2025-06-13 10:08:13] [info] Running model ...
+[2025-06-13 10:08:13] [info] Run model success
+[2025-06-13 10:08:13] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:13] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:13] [info] Start run det infer.
+[2025-06-13 10:08:13] [info] Run a single roi.
+[2025-06-13 10:08:13] [info] Running model id 0001
+[2025-06-13 10:08:13] [info] Do the preprocess overlaps 204 ms
+[2025-06-13 10:08:13] [info] Start RunInferModel
+[2025-06-13 10:08:13] [info] input name: images
+[2025-06-13 10:08:13] [info] output name: output0
+[2025-06-13 10:08:13] [info] Running model ...
+[2025-06-13 10:08:13] [info] Run model success
+[2025-06-13 10:08:13] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:08:13] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:13] [info] Start run det infer.
+[2025-06-13 10:08:13] [info] Run a single roi.
+[2025-06-13 10:08:13] [info] Running model id 0001
+[2025-06-13 10:08:13] [info] Do the preprocess overlaps 212 ms
+[2025-06-13 10:08:13] [info] Start RunInferModel
+[2025-06-13 10:08:13] [info] input name: images
+[2025-06-13 10:08:13] [info] output name: output0
+[2025-06-13 10:08:13] [info] Running model ...
+[2025-06-13 10:08:13] [info] Run model success
+[2025-06-13 10:08:13] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:13] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:13] [info] Start run det infer.
+[2025-06-13 10:08:13] [info] Run a single roi.
+[2025-06-13 10:08:13] [info] Running model id 0001
+[2025-06-13 10:08:14] [info] Do the preprocess overlaps 224 ms
+[2025-06-13 10:08:14] [info] Start RunInferModel
+[2025-06-13 10:08:14] [info] input name: images
+[2025-06-13 10:08:14] [info] output name: output0
+[2025-06-13 10:08:14] [info] Running model ...
+[2025-06-13 10:08:14] [info] Run model success
+[2025-06-13 10:08:14] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:14] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:14] [info] Start run det infer.
+[2025-06-13 10:08:14] [info] Run a single roi.
+[2025-06-13 10:08:14] [info] Running model id 0001
+[2025-06-13 10:08:14] [info] Do the preprocess overlaps 208 ms
+[2025-06-13 10:08:14] [info] Start RunInferModel
+[2025-06-13 10:08:14] [info] input name: images
+[2025-06-13 10:08:14] [info] output name: output0
+[2025-06-13 10:08:14] [info] Running model ...
+[2025-06-13 10:08:14] [info] Run model success
+[2025-06-13 10:08:14] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:14] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:14] [info] Start run det infer.
+[2025-06-13 10:08:14] [info] Run a single roi.
+[2025-06-13 10:08:14] [info] Running model id 0001
+[2025-06-13 10:08:14] [info] Do the preprocess overlaps 192 ms
+[2025-06-13 10:08:14] [info] Start RunInferModel
+[2025-06-13 10:08:14] [info] input name: images
+[2025-06-13 10:08:14] [info] output name: output0
+[2025-06-13 10:08:14] [info] Running model ...
+[2025-06-13 10:08:14] [info] Run model success
+[2025-06-13 10:08:14] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:14] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:14] [info] Start run det infer.
+[2025-06-13 10:08:14] [info] Run a single roi.
+[2025-06-13 10:08:14] [info] Running model id 0001
+[2025-06-13 10:08:14] [info] Do the preprocess overlaps 214 ms
+[2025-06-13 10:08:14] [info] Start RunInferModel
+[2025-06-13 10:08:14] [info] input name: images
+[2025-06-13 10:08:14] [info] output name: output0
+[2025-06-13 10:08:14] [info] Running model ...
+[2025-06-13 10:08:14] [info] Run model success
+[2025-06-13 10:08:14] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:08:14] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:08:15] [info] Destroy the engine success.
+[2025-06-13 10:25:26] [info] Load Module: 0001
+[2025-06-13 10:25:26] [info] Module class: DetInferModule
+[2025-06-13 10:25:26] [info] Start init model and cfgs
+[2025-06-13 10:25:26] [info] Get the CUDA Runtime Version: 12.6
+[2025-06-13 10:25:26] [info] cuDNN Version: 9.10
+[2025-06-13 10:25:27] [info] Create infer model success
+[2025-06-13 10:25:27] [info] 	images : 1x3x1280x1280.
+[2025-06-13 10:25:27] [info] 	output0 : 1x12x33600
+[2025-06-13 10:25:27] [info] Create infer model success
+[2025-06-13 10:25:27] [info] Create infer assets success
+[2025-06-13 10:25:27] [info] Start run det infer.
+[2025-06-13 10:25:27] [info] Run a single roi.
+[2025-06-13 10:25:27] [info] Running model id 0001
+[2025-06-13 10:25:28] [info] Do the preprocess overlaps 225 ms
+[2025-06-13 10:25:28] [info] Start RunInferModel
+[2025-06-13 10:25:28] [info] input name: images
+[2025-06-13 10:25:28] [info] output name: output0
+[2025-06-13 10:25:28] [info] Running model ...
+[2025-06-13 10:25:28] [info] Run model success
+[2025-06-13 10:25:28] [info] RunInferModel overlaps 366 ms
+[2025-06-13 10:25:28] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:28] [info] Start run det infer.
+[2025-06-13 10:25:28] [info] Run a single roi.
+[2025-06-13 10:25:28] [info] Running model id 0001
+[2025-06-13 10:25:28] [info] Do the preprocess overlaps 204 ms
+[2025-06-13 10:25:28] [info] Start RunInferModel
+[2025-06-13 10:25:28] [info] input name: images
+[2025-06-13 10:25:28] [info] output name: output0
+[2025-06-13 10:25:28] [info] Running model ...
+[2025-06-13 10:25:28] [info] Run model success
+[2025-06-13 10:25:28] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:25:28] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:28] [info] Start run det infer.
+[2025-06-13 10:25:28] [info] Run a single roi.
+[2025-06-13 10:25:28] [info] Running model id 0001
+[2025-06-13 10:25:28] [info] Do the preprocess overlaps 208 ms
+[2025-06-13 10:25:28] [info] Start RunInferModel
+[2025-06-13 10:25:28] [info] input name: images
+[2025-06-13 10:25:28] [info] output name: output0
+[2025-06-13 10:25:28] [info] Running model ...
+[2025-06-13 10:25:29] [info] Run model success
+[2025-06-13 10:25:29] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:29] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:29] [info] Start run det infer.
+[2025-06-13 10:25:29] [info] Run a single roi.
+[2025-06-13 10:25:29] [info] Running model id 0001
+[2025-06-13 10:25:29] [info] Do the preprocess overlaps 222 ms
+[2025-06-13 10:25:29] [info] Start RunInferModel
+[2025-06-13 10:25:29] [info] input name: images
+[2025-06-13 10:25:29] [info] output name: output0
+[2025-06-13 10:25:29] [info] Running model ...
+[2025-06-13 10:25:29] [info] Run model success
+[2025-06-13 10:25:29] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:29] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:29] [info] Start run det infer.
+[2025-06-13 10:25:29] [info] Run a single roi.
+[2025-06-13 10:25:29] [info] Running model id 0001
+[2025-06-13 10:25:29] [info] Do the preprocess overlaps 211 ms
+[2025-06-13 10:25:29] [info] Start RunInferModel
+[2025-06-13 10:25:29] [info] input name: images
+[2025-06-13 10:25:29] [info] output name: output0
+[2025-06-13 10:25:29] [info] Running model ...
+[2025-06-13 10:25:29] [info] Run model success
+[2025-06-13 10:25:29] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:29] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:29] [info] Start run det infer.
+[2025-06-13 10:25:29] [info] Run a single roi.
+[2025-06-13 10:25:29] [info] Running model id 0001
+[2025-06-13 10:25:29] [info] Do the preprocess overlaps 226 ms
+[2025-06-13 10:25:29] [info] Start RunInferModel
+[2025-06-13 10:25:29] [info] input name: images
+[2025-06-13 10:25:29] [info] output name: output0
+[2025-06-13 10:25:29] [info] Running model ...
+[2025-06-13 10:25:29] [info] Run model success
+[2025-06-13 10:25:29] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:29] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:29] [info] Start run det infer.
+[2025-06-13 10:25:30] [info] Run a single roi.
+[2025-06-13 10:25:30] [info] Running model id 0001
+[2025-06-13 10:25:30] [info] Do the preprocess overlaps 221 ms
+[2025-06-13 10:25:30] [info] Start RunInferModel
+[2025-06-13 10:25:30] [info] input name: images
+[2025-06-13 10:25:30] [info] output name: output0
+[2025-06-13 10:25:30] [info] Running model ...
+[2025-06-13 10:25:30] [info] Run model success
+[2025-06-13 10:25:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:30] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:30] [info] Start run det infer.
+[2025-06-13 10:25:30] [info] Run a single roi.
+[2025-06-13 10:25:30] [info] Running model id 0001
+[2025-06-13 10:25:30] [info] Do the preprocess overlaps 215 ms
+[2025-06-13 10:25:30] [info] Start RunInferModel
+[2025-06-13 10:25:30] [info] input name: images
+[2025-06-13 10:25:30] [info] output name: output0
+[2025-06-13 10:25:30] [info] Running model ...
+[2025-06-13 10:25:30] [info] Run model success
+[2025-06-13 10:25:30] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:30] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:30] [info] Start run det infer.
+[2025-06-13 10:25:30] [info] Run a single roi.
+[2025-06-13 10:25:30] [info] Running model id 0001
+[2025-06-13 10:25:30] [info] Do the preprocess overlaps 220 ms
+[2025-06-13 10:25:30] [info] Start RunInferModel
+[2025-06-13 10:25:30] [info] input name: images
+[2025-06-13 10:25:30] [info] output name: output0
+[2025-06-13 10:25:30] [info] Running model ...
+[2025-06-13 10:25:30] [info] Run model success
+[2025-06-13 10:25:30] [info] RunInferModel overlaps 10 ms
+[2025-06-13 10:25:30] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:30] [info] Start run det infer.
+[2025-06-13 10:25:30] [info] Run a single roi.
+[2025-06-13 10:25:30] [info] Running model id 0001
+[2025-06-13 10:25:31] [info] Do the preprocess overlaps 221 ms
+[2025-06-13 10:25:31] [info] Start RunInferModel
+[2025-06-13 10:25:31] [info] input name: images
+[2025-06-13 10:25:31] [info] output name: output0
+[2025-06-13 10:25:31] [info] Running model ...
+[2025-06-13 10:25:31] [info] Run model success
+[2025-06-13 10:25:31] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:31] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:31] [info] Start run det infer.
+[2025-06-13 10:25:31] [info] Run a single roi.
+[2025-06-13 10:25:31] [info] Running model id 0001
+[2025-06-13 10:25:31] [info] Do the preprocess overlaps 218 ms
+[2025-06-13 10:25:31] [info] Start RunInferModel
+[2025-06-13 10:25:31] [info] input name: images
+[2025-06-13 10:25:31] [info] output name: output0
+[2025-06-13 10:25:31] [info] Running model ...
+[2025-06-13 10:25:31] [info] Run model success
+[2025-06-13 10:25:31] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:31] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:31] [info] Start run det infer.
+[2025-06-13 10:25:31] [info] Run a single roi.
+[2025-06-13 10:25:31] [info] Running model id 0001
+[2025-06-13 10:25:31] [info] Do the preprocess overlaps 201 ms
+[2025-06-13 10:25:31] [info] Start RunInferModel
+[2025-06-13 10:25:31] [info] input name: images
+[2025-06-13 10:25:31] [info] output name: output0
+[2025-06-13 10:25:31] [info] Running model ...
+[2025-06-13 10:25:31] [info] Run model success
+[2025-06-13 10:25:31] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:31] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:31] [info] Start run det infer.
+[2025-06-13 10:25:31] [info] Run a single roi.
+[2025-06-13 10:25:31] [info] Running model id 0001
+[2025-06-13 10:25:32] [info] Do the preprocess overlaps 210 ms
+[2025-06-13 10:25:32] [info] Start RunInferModel
+[2025-06-13 10:25:32] [info] input name: images
+[2025-06-13 10:25:32] [info] output name: output0
+[2025-06-13 10:25:32] [info] Running model ...
+[2025-06-13 10:25:32] [info] Run model success
+[2025-06-13 10:25:32] [info] RunInferModel overlaps 9 ms
+[2025-06-13 10:25:32] [info] Do the postprocess overlaps 1 ms
+[2025-06-13 10:25:32] [info] Destroy the engine success.
+[2025-06-13 10:26:04] [info] Load Module: 0003
+[2025-06-13 10:26:04] [info] Module 0003 task segment does not match expected engine task detect
+[2025-06-13 10:26:04] [error] Load models failed 4
+[2025-06-13 10:26:04] [error] LoadResources failed 4

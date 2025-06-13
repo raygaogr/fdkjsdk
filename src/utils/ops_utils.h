@@ -9,7 +9,7 @@
 
 namespace flabsdk {
 
-		Status LoadModels(std::vector<char>& cfgs_vec, modules::InferAssets& assets, bool is_json_format);
+		Status LoadModels(std::vector<char>& cfgs_vec, modules::InferAssets& assets, bool is_json_format, std::string& task);
 
 		Status RunModels(modules::InferAssets& assets, RecordInfo* record_info, bool verbose);
 

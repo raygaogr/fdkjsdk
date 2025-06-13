@@ -1,15 +1,11 @@
 #pragma once
 
 #include "tasks/io_structures.h"
-#include "infer_modules/base_module.h"
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <string>
-#include <unordered_map>
+#include <opencv2/opencv.hpp>
 #include <vector>
 
 namespace flabsdk {
+
 	struct RecordInfo {
 		cv::Mat img;
 	};

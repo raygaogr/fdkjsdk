@@ -63,7 +63,7 @@ class FLABINFER_EXPORT InferEngine {
  * @param engine[out] Pointer to the created InferEngine object.
  * @return Status The status of the operation.
  */
-Status FLABINFER_EXPORT CreateInferEngine(const std::string& model_id, InferEngine** engine);
+Status FLABINFER_EXPORT CreateInferEngine(const std::string& model_id, InferEngine** engine, std::string& task);
 
 
 /**

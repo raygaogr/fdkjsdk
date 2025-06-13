@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include "utils/io_utils.h"
-#include "utils/base_funcs.h"
+#include "utils/base_funcs.hpp"
 
 
 namespace flabsdk {
@@ -114,8 +114,7 @@ namespace flabsdk {
 					output_data.emplace_back(out);
 				}
 				auto end = std::chrono::high_resolution_clock::now();
-				duration =
-					std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+				duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 			}
 			catch (const Ort::Exception& exception) {
 				spdlog::error("RunInferModel failed: {}", exception.what());

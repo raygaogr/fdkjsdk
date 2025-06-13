@@ -8,19 +8,28 @@
 #include <Windows.h>
 #include <time.h>
 #include "yaml-cpp/yaml.h"
-
+#include <fstream>
 
 //#include <cuda_runtime.h>
 //#include <cudnn.h>
 typedef int (*cudaRuntimeGetVersion_t)(int*);
 typedef unsigned int (*cudnnGetVersion_t)();
 
-void drawResult(const cv::Mat& image, const flabsdk::flabio::DetInferRes& infer_res) {
-	for (const auto& box : (infer_res.bboxes_vec)[0]) {
-		cv::rectangle(image, cv::Point(box.x - int(box.width / 2), box.y - int(box.height / 2)), 
-			                 cv::Point(box.x + int(box.width / 2), box.y + int(box.height / 2)), cv::Scalar(0, 255, 0), 2);
-		std::string output_text = box.uid + " " + std::to_string(box.score);
-		cv::putText(image, output_text, cv::Point(box.x - int(box.width / 2), box.y - int(box.height / 2)), cv::FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(0, 255, 0), 2);
+void drawResult(const cv::Mat& image, const flabsdk::flabio::BaseInferRes* infer_res, std::string task) {
+	if (task == "detect") {
+		for (const auto& box : (static_cast<const flabsdk::flabio::DetInferRes*>(infer_res)->bboxes_vec)[0]) {
+			cv::rectangle(image, cv::Point(box.x - int(box.width / 2), box.y - int(box.height / 2)),
+				cv::Point(box.x + int(box.width / 2), box.y + int(box.height / 2)), cv::Scalar(0, 255, 0), 2);
+			std::string output_text = box.uid + " " + std::to_string(box.score);
+			cv::putText(image, output_text, cv::Point(box.x - int(box.width / 2), box.y - int(box.height / 2)), cv::FONT_HERSHEY_SIMPLEX, 1.0, cv::Scalar(0, 255, 0), 2);
+		}
+	}
+	else if (task == "segment") {
+		for (const auto& mask : (static_cast<const flabsdk::flabio::SegInferRes*>(infer_res)->masks_vec)[0]) {
+			std::vector<std::vector<cv::Point>> drawPoints;
+			drawPoints.emplace_back(mask.points);
+			cv::drawContours(image, drawPoints, -1, cv::Scalar(0, 255, 0), -1);
+		}
 	}
 	cv::imwrite("res.jpg", image);
 }
@@ -105,6 +114,20 @@ int test_yaml() {
 		return 1;
 	}
 	std::cout << config["modules"]["0001"] << std::endl;
+
+	std::vector<char> cfgs;
+	std::string FilePath = "D:/Workspace_gr/cProjects/fdkjsdk/config/config.yaml";
+	std::ifstream file(FilePath.c_str());
+	if (file.good()) {
+		file.seekg(0, file.end);
+		size_t size = file.tellg();
+		file.seekg(0, file.beg);
+		cfgs.resize(size);
+		file.read(cfgs.data(), size);
+		file.close();
+	}
+	YAML::Node cfg = YAML::Load(cfgs.data());
+	std::cout << cfg["modules"]["0001"] << std::endl;
 	return 0;
 }
 
@@ -124,7 +147,8 @@ int main(int argc, char* argv[]) {
 	int d = INT_MAX;
 	int e = INT_MIN;
 
-	auto status = flabsdk::CreateInferEngine("0001", &engine);
+	std::string task = "";
+	auto status = flabsdk::CreateInferEngine("0001", &engine, task);
 	if (status != flabsdk::Status::kSuccess) {
 		std::cerr << "Failed to create inference engine: " << static_cast<int>(status) << std::endl;
 		return -1;
@@ -140,7 +164,8 @@ int main(int argc, char* argv[]) {
 	}
 	std::cout << "sucessfully init log" << std::endl;
 
-	std::string str = "D:/Workspace_gr/cProjects/fdkjsdk/config/config.json";
+	std::string str = "D:/Workspace_gr/cProjects/fdkjsdk/config/config.yaml";
+	
 	status = engine->LoadResources(str);
 	if (status != flabsdk::Status::kSuccess) {
 		std::cerr << "Failed to load resources: " << static_cast<int>(status) << std::endl;
@@ -149,8 +174,23 @@ int main(int argc, char* argv[]) {
 		return -1;
 	}
 
-	flabsdk::flabio::DetInferCfg infer_cfg;
-	flabsdk::flabio::DetInferRes infer_res;
+	flabsdk::flabio::BaseInferCfg* infer_cfg;
+	flabsdk::flabio::BaseInferRes* infer_res;
+	if (task == "detect") {
+		infer_cfg = new flabsdk::flabio::DetInferCfg();
+		infer_res = new flabsdk::flabio::DetInferRes();
+	}
+	else if (task == "segment") {
+		infer_cfg = new flabsdk::flabio::SegInferCfg();
+		infer_res = new flabsdk::flabio::SegInferRes();
+	}
+	else {
+		std::cerr << "Invalid task type: " << task << std::endl;
+		engine->ClearResources();
+		delete engine;
+		return -1;
+	}
+
 	cv::Mat input_mat = cv::imread("D:/Workspace_gr/cProjects/fdkjsdk/data/image/test_weld.jpg");
 	auto input_h = input_mat.rows;
 	auto input_w = input_mat.cols;
@@ -161,11 +201,11 @@ int main(int argc, char* argv[]) {
 	roi.width = input_w;
 	roi.height = input_h;
 
-	infer_cfg.infer_rois.push_back(roi);
+	infer_cfg->infer_rois.push_back(roi);
 
-	int warm_up_times = 0;
+	int warm_up_times = 3;
 	for (int i = 0; i < warm_up_times; i++) {
-		status = engine->InferSync(input_mat, &infer_cfg, &infer_res);
+		status = engine->InferSync(input_mat, infer_cfg, infer_res);
 		if (status != flabsdk::Status::kSuccess) {
 			std::cerr << "Failed to run inference: " << static_cast<int>(status) << std::endl;
 			engine->ClearResources();
@@ -176,9 +216,9 @@ int main(int argc, char* argv[]) {
 	std::cout << "Warm up completed." << std::endl;
 
 	time_t start_time = time(NULL);
-	int infer_times = 1;
+	int infer_times = 10;
 	for (int i = 0; i < infer_times; i++) {
-		status = engine->InferSync(input_mat, &infer_cfg, &infer_res);
+		status = engine->InferSync(input_mat, infer_cfg, infer_res);
 		if (status != flabsdk::Status::kSuccess) {
 			std::cerr << "Failed to run inference: " << static_cast<int>(status) << std::endl;
 			engine->ClearResources();
@@ -189,7 +229,7 @@ int main(int argc, char* argv[]) {
 	time_t end_time = time(NULL);
 	std::cout << "Inference time: " << difftime(end_time, start_time) / infer_times << " seconds" << std::endl;
 
-	drawResult(input_mat.clone(), infer_res);
+	drawResult(input_mat.clone(), infer_res, task);
 
 	std::cout << "Inference completed successfully." << std::endl;
 	engine->ClearResources();
@@ -199,9 +239,6 @@ int main(int argc, char* argv[]) {
 	std::cout << "Engine destroyed successfully." << std::endl;
 
 
-	//flabsdk::CreateInferEngine("0001", &engine);
-
-	//std::cout << "start create engine" << std::endl;
 
 	return 0;
 }

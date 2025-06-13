@@ -2,7 +2,8 @@
 #include <spdlog/spdlog.h>
 #include "flabsdk.h"
 #include "tasks/det_engine.h"
-#include "utils/base_funcs.h"
+#include "tasks/seg_engine.h"
+#include "utils/base_funcs.hpp"
 #include <iostream>
 
 namespace flabsdk {
@@ -29,19 +30,32 @@ namespace flabsdk {
 	}
 
 
-	Status FLABINFER_EXPORT CreateInferEngine(const std::string& model_id, InferEngine** engine) {
-		if (model_id == "0001" || model_id == "0002") {
+	Status FLABINFER_EXPORT CreateInferEngine(const std::string& model_id, InferEngine** engine, std::string& task) {
+		std::unordered_map<std::string, std::string> id2task = {
+			{"0001", "detect"},
+			{"0002", "detect"},
+			{"0003", "segment"}
+		};
+		if (id2task.find(model_id) != id2task.end())
+			task = id2task.at(model_id);
+		else {
+			spdlog::info("Invalid model id");
+			return Status::kInputInvalid;
+		}
+		if (task == "detect") {
 			*engine = new det_infer::DetInferEngine();
 			if (*engine == nullptr) {
 				spdlog::info("Create the engine failed.");
 				return Status::kOutputInvalid;
 			}
-			return Status::kSuccess;
+		} else if (task == "segment") {
+			*engine = new seg_infer::SegInferEngine();
+			if (*engine == nullptr) {
+				spdlog::info("Create the engine failed.");
+				return Status::kOutputInvalid;
+			}
 		}
-		else {
-			spdlog::info("Invalid model id.");
-			return Status::kInputInvalid;
-		}
+		return Status::kSuccess;
 	}
 
 	Status FLABINFER_EXPORT DestroyInferEngine(InferEngine* engine) {

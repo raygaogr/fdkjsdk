@@ -34,23 +34,34 @@ namespace flabsdk {
 			return json(); // 默认返回空对象
 		}
 
-		Status LoadModels(std::vector<char>& cfgs_vec, modules::InferAssets& assets, bool is_json_format) {
+		Status LoadModels(std::vector<char>& cfgs_vec, modules::InferAssets& assets, bool is_json_format, std::string& task) {
 			if (is_json_format) {
 				assets.cfgs_ = json::parse(cfgs_vec.data(), cfgs_vec.data() + cfgs_vec.size());
 			}
 			else {
-				assets.cfgs_ = convertYamlToJson(YAML::Load(cfgs_vec.data()));
+				auto Node = YAML::Load(cfgs_vec.data());
+				assets.cfgs_ = convertYamlToJson(Node);
 			}
+			std::unordered_map<std::string, std::string> id2task = {
+				{"0001", "detect"},
+				{"0002", "detect"},
+				{"0003", "segment"}
+			};
 			for (auto& node : assets.cfgs_["graph"]["main"]) {
-				spdlog::info("Load Module: {}", node["model_id"].get<std::string>());
 				std::string model_id = node["model_id"].get<std::string>();
+				spdlog::info("Load Module: {}", model_id);
+				std::string module_task = id2task[model_id];
 				if (!assets.cfgs_["modules"].contains(model_id)) {
 					spdlog::info("Module {} not found in cfgs", model_id);
 					return Status::kNotFound;
 				}
+				if (module_task != task) {
+					spdlog::info("Module {} task {} does not match expected engine task {}", model_id, module_task, task);
+					return Status::kInputInvalid;
+				}
 				std::string module_class = assets.cfgs_["modules"][model_id]["class"];
 				spdlog::info("Module class: {}", module_class);
-				assets.modules_[model_id] = std::shared_ptr<modules::BaseModule>(get_module(module_class));
+				assets.modules_[model_id] = ModuleRegistry::instance().get_module(module_class);
 				auto status = assets.modules_[model_id]->init(assets.cfgs_["modules"][model_id]["init_params"]);
 				if (status != Status::kSuccess) { 
 					assets.modules_.clear();

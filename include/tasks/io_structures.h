@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <opencv2/opencv.hpp>
 
 namespace flabsdk {
 	namespace flabio {
@@ -18,12 +19,6 @@ namespace flabsdk {
 		////////////////////////////////////////////////////////////////////////////////
 		//                            Basic struct, task agnostic                      //
 		////////////////////////////////////////////////////////////////////////////////
-
-		struct Point {
-			int x = 0;
-			int y = 0;
-		};
-
 		struct ROI {
 			int x = 0;          // center point x coordinate
 			int y = 0;          // center point y coordinate  
@@ -37,16 +32,17 @@ namespace flabsdk {
 			int y = 0;	 // center point y coordinate
 			int width = 0;		// width of the bbox
 			int height = 0;		// height of the bbox
-			float angle = 0; // the angle of the bbox
-			float score = 0; // the score of the bbox
+			float angle = 0.f; // the angle of the bbox
+			float score = 0.f; // the score of the bbox
 			std::string uid; // unique id of the bbox
 			std::string name; // the name of the bbox
 		};
 
 		struct Mask {
-			std::vector<Point> points; // points of the contour
+			std::vector<cv::Point> points; // points of the contour
 			std::string uid; // unique id of the mask
 			std::string name; // type of the mask
+			float score = 0.f; // the score of the mask
 		};
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -55,20 +51,19 @@ namespace flabsdk {
 		// 通用输入基类
 		struct BaseInferCfg {
 			virtual ~BaseInferCfg() = default;
+			std::vector<ROI> infer_rois;       // ROI region of interest
 		};
 
 		struct DetInferCfg : public BaseInferCfg {
-			std::vector<ROI> infer_rois;       // ROI region of interest
-			float conf = 0.3;    // The confidence threshold
-			float iou = 0.3;     // The IOU threshold
+			float conf = 0.3f;    // The confidence threshold
+			float iou = 0.3f;     // The IOU threshold
 			int max_num = -1;    // The max number of objects to detect
 			int sort_method = 0;   // The mothod of sorting
 		};
 
 		struct SegInferCfg : public BaseInferCfg {
-			std::vector<ROI> infer_rois;       // ROI region of interest
-			float conf = 0.3;    // The confidence threshold
-			float iou = 0.3;     // The IOU threshold
+			float conf = 0.3f;    // The confidence threshold
+			float iou = 0.3f;     // The IOU threshold
 			int max_num = -1;    // The max number of objects to detect
 		};
 

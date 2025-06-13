@@ -13,7 +13,7 @@ modules:
         - D:/Workspace_gr/cProjects/fdkjsdk/models/weld.onnx
       cfgs:
         device: GPU
-        max_num: 10
+        max_num: 100
         conf: 0.3
         iou: 0.3
         sort_mathod: 0
@@ -29,14 +29,27 @@ modules:
         - D:/Workspace_gr/cProjects/fdkjsdk/models/glassbracket.onnx
       cfgs:
         device: GPU
-        max_num: 10
+        max_num: 100
         conf: 0.5
         iou: 0.5
         sort_mathod: 0
+      id_cfgs:
+        "0": label0
+   
+  "0003":
+    class: WeldSegInferModule
+    init_params:
+      model_path:
+        - D:/Workspace_gr/cProjects/fdkjsdk/models/weldseg.onnx
+      cfgs:
+        device: GPU
+        max_num: 100
+        conf: 0.1
+        iou: 0.3
       id_cfgs:
         "0": label0
 
 graph:
   main:
     - type: Run
-      model_id: "0001"
+      model_id: "0003"

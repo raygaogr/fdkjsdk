@@ -11,9 +11,13 @@ namespace flabsdk {
 		return converter.from_bytes(utf8_str);
 	}
 
-	Status readFileStream(const std::string& filePath, std::vector<char>& cfgs) {
+	Status readFileStream(const std::string& filePath, std::vector<char>& cfgs, bool is_model_file) {
 		std::wstring wFilePath = ConvertToWideString(filePath);
-		std::ifstream file(wFilePath.c_str(), std::ios::binary);
+		std::ifstream file;
+		if (is_model_file) 
+			file = std::ifstream(wFilePath.c_str(), std::ios::binary);
+		else
+			file = std::ifstream(wFilePath.c_str());
 		if (file.good()) {
 			file.seekg(0, file.end);
 			size_t size = file.tellg();
